@@ -39,21 +39,24 @@ exports.styles = styles
 
 // Styles libs
 
-// const stylesLibs = () => {
-//   return src([])
-//     .pipe(concat('libs.css'))
-//     .pipe(dest('docs'))
-//     .pipe(sync.stream())
-// };
+const stylesLibs = () => {
+  return src([
+    'node_modules/swiper/swiper-bundle.min.css',
+  ])
+    .pipe(concat('libs.css'))
+    .pipe(dest('docs'))
+    .pipe(sync.stream())
+};
 
-// exports.stylesLibs = stylesLibs
+exports.stylesLibs = stylesLibs
 
 // Scripts libs
 
 const scriptsLibs = () => {
   return src([
       'node_modules/focus-visible/dist/focus-visible.min.js',
-      'node_modules/scroll-lock/dist/scroll-lock.min.js'
+      'node_modules/scroll-lock/dist/scroll-lock.min.js',
+      'node_modules/swiper/swiper-bundle.min.js'
     ])
     .pipe(concat('libs.js'))
     .pipe(dest('docs'))
@@ -126,7 +129,7 @@ exports.default = series(
   clear,
   parallel(
     html,
-    // stylesLibs,
+    stylesLibs,
     styles,
     scriptsLibs,
     scripts,
