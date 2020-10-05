@@ -1,0 +1,40 @@
+.city-selection {
+  overflow: hidden;
+  clip-path: inset(0 0 20px 0);
+  margin-bottom: -20px;
+}
+
+.city-selection__list {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+  label {
+    display: flex;
+  }
+
+  input {
+    .visually-hidden;
+  }
+
+  input:checked + span {
+    color: #fff;
+    background-color: #0566aa;
+  }
+
+  li {
+    white-space: nowrap;
+
+    &:hover {
+      color: @body-color;
+    }
+  }
+}
+
+.city-selection__frame {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}

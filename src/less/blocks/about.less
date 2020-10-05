@@ -1,0 +1,45 @@
+.about__content {
+  .grid__item {
+    &:first-child {
+      @media (min-width: @breakpoint-md) {
+        width: 75%;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: @breakpoint-md) {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 12px;
+}
+
+.about__subtitle {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #6d6d6d;
+  margin-bottom: 24px;
+}
+
+.about__text {
+  p {
+    &:first-child {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+
+
+.about__stat {
+  .grid__item {
+    @media (min-width: @breakpoint-md) {
+      width: 33.33%;
+    }
+  }
+}

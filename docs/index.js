@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var swiperImplementedProject=new Swiper(".implemented-project",{slidesPerView:1,spaceBetween:30,loop:!0,breakpoints:{768:{slidesPerView:2}},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".implemented-project__next",prevEl:".implemented-project__prev"}});
