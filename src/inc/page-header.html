@@ -1,5 +1,111 @@
 <header class="header">
+  <div class="header__wrap">
+    <div class="header__list">
+      <div class="header__fold">
+        <ul class="header__menu">
+          <li class="header__logo">
+            <a href="index.html">
+              <img src="img/logo.png" width="132" height="65" alt="">
+            </a>
+          </li>
 
+          <li class="header__phone">
+            <a href="tel:+78002502031">
+              <img src="img/phone.png" width="27" height="27" alt="">
+            </a>
+            <p>*Бесплатный звонок по РФ</p>
+            <p>8 800 250 20 31</p>
+          </li>
+
+          <li>
+            <button type="button" class="btn">Обратный звонок</button>
+          </li>
+
+          <li class="header__toggle">
+            <button class="header__open" type="button">
+              <svg width="32" height="32">
+                <use href="img/sprite.svg#menu"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__collapse">
+        <button class="header__close" type="button">
+          <svg width="32" height="32">
+            <use href="img/sprite.svg#cross"></use>
+          </svg>
+        </button>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__link"><a href="#">О компании</a></li>
+
+            <li class="header__link">
+              <span class="js-collapse-toggle" data-target="#menu-object">
+                Объекты в продаже
+
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-object" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link">
+              <span href="#" class="js-collapse-toggle" data-target="#menu-project">
+                Строящиеся проекты
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-project" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link">
+              <span href="#" class="js-collapse-toggle" data-target="#menu-office">
+                Офисы продаж
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-office" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main class="main">
