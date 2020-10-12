@@ -1,3 +1,9 @@
+.header {
+  @media (min-width: @breakpoint-lg) {
+    padding: 16px 24px;
+  }
+}
+
 .header__wrap {
   max-width: 1140px;
   margin-right: auto;
@@ -13,7 +19,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
-  @media (max-width: @breakpoint-xl - 1px) {
+  @media (max-width: @breakpoint-lg - 1px) {
     background-color: #fff;
     padding: 16px 24px;
     width: 100%;
@@ -21,23 +27,47 @@
   }
 }
 
+.header__nav {
+  @media (max-width: @breakpoint-lg - 1px) {
+    margin-top: 32px;
+  }
+}
+
 .header__menu {
   display: flex;
   justify-content: space-between;
+
+  &--fold {
+    align-items: center;
+  }
+
+  &--collapse {
+    @media (max-width: @breakpoint-lg - 1px) {
+      flex-direction: column;
+
+      li:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    // & > li:not(:last-child) {
+    //   margin-right: 40px;
+    // }
+  }
 }
 
 .header__link {
   position: relative;
   cursor: pointer;
 
-  @media (max-width: @breakpoint-xl - 1px) {
+  @media (max-width: @breakpoint-lg - 1px) {
     a {
       display: flex;
       align-items: center;
     }
   }
 
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-lg) {
     a {
       position: relative;
       z-index: 3;
@@ -46,7 +76,7 @@
 }
 
 .header__dropdown {
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-lg) {
     display: none;
   }
 
@@ -58,7 +88,7 @@
 .header__toggle {
   line-height: 0;
 
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-lg) {
     display: none;
   }
 
@@ -71,13 +101,13 @@
 .header__close {
   float: right;
 
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-lg) {
     display: none;
   }
 }
 
 .header__collapse {
-  @media (max-width: @breakpoint-xl - 1px) {
+  @media (max-width: @breakpoint-lg - 1px) {
     position: fixed;
     top: 0;
     right: 0;
@@ -103,19 +133,15 @@
 .header__nav {
   text-transform: uppercase;
 
-  @media (min-width: @breakpoint-md) {
+  @media (min-width: @breakpoint-lg) {
     width: 83.33%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.Прямоугольник_9 {
-  background-color: rgb(175, 175, 175);
-  position: absolute;
-  left: 390px;
-  top: 90px;
-  width: 1140px;
-  height: 1px;
-  z-index: 399;
+.header__callback {
+  @media (max-width: @breakpoint-lg - 1px) {
+    display: none;
+  }
 }

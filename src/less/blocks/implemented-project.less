@@ -1,0 +1,44 @@
+.implemented-project__slider {
+  @media (max-width: @breakpoint-xl - 1px) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.implemented-project__prev,
+.implemented-project__next {
+  border: 1px solid @body-color;
+  border-radius: 50%;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+
+  &::after {
+    font-size: 16px;
+  }
+}
+
+.implemented-project__prev {
+  left: 0;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    left: auto;
+    right: 40px;
+    top: 16px;
+  }
+}
+
+.implemented-project__next {
+  right: 0;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    top: 16px;
+  }
+}

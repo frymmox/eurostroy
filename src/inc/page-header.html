@@ -2,7 +2,7 @@
   <div class="header__wrap">
     <div class="header__list">
       <div class="header__fold">
-        <ul class="header__menu">
+        <ul class="header__menu  header__menu--fold">
           <li class="header__logo">
             <a href="index.html">
               <img src="img/logo.png" width="132" height="65" alt="">
@@ -10,14 +10,21 @@
           </li>
 
           <li class="header__phone">
-            <a href="tel:+78002502031">
-              <img src="img/phone.png" width="27" height="27" alt="">
-            </a>
-            <p>*Бесплатный звонок по РФ</p>
-            <p>8 800 250 20 31</p>
+            <div class="phone">
+              <div class="phone__image">
+                <a href="tel:+78002502031">
+                  <img src="img/phone.png" width="27" height="27" alt="">
+                </a>
+              </div>
+
+              <div class="phone__text">
+                <p class="phone__desc">*Бесплатный звонок по РФ</p>
+                <p class="phone__number">8 800 250 20 31</p>
+              </div>
+            </div>
           </li>
 
-          <li>
+          <li class="header__callback">
             <button type="button" class="btn">Обратный звонок</button>
           </li>
 
@@ -39,7 +46,7 @@
         </button>
 
         <nav class="header__nav">
-          <ul class="header__menu">
+          <ul class="header__menu  header__menu--collapse">
             <li class="header__link"><a href="#">О компании</a></li>
 
             <li class="header__link">
@@ -100,7 +107,7 @@
               </div>
             </li>
 
-            <li class="header__link"><a href="contacts.html">Контакты</a></li>
+            <li class="header__link"><a href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>

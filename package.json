@@ -27,7 +27,9 @@
   },
   "dependencies": {
     "focus-visible": "^5.1.0",
+    "inputmask": "^5.0.5",
     "scroll-lock": "^2.1.4",
-    "swiper": "^6.3.2"
+    "swiper": "^6.3.2",
+    "tippy.js": "^6.2.7"
   }
 }

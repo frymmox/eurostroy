@@ -1,0 +1,26 @@
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone__image {
+  margin-right: 12px;
+}
+
+.phone__text {
+  @media (max-width: @breakpoint-md - 1px) {
+    display: none;
+  }
+}
+
+.phone__desc {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 600;
+}
+
+.phone__number {
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+  font-weight: bold;
+}
