@@ -1,3 +1,14 @@
+const swiperPromo = new Swiper('.promo__slider', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.promo__next',
+    prevEl: '.promo__prev',
+  },
+})
+
 const swiperImplementedProject = new Swiper('.implemented-project__slider', {
   slidesPerView: 1,
   spaceBetween: 40,

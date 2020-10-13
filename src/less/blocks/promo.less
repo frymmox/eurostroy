@@ -1,0 +1,117 @@
+.promo__slide {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #354f55;
+  opacity: 0.85;
+  color: #fff;
+}
+
+.promo__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.promo__wrapper {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: var(--block-gap-horizontal, @block-gap-horizontal);
+  padding-left: var(--block-gap-horizontal, @block-gap-horizontal);
+
+  @media (min-width: @breakpoint-md) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.promo__title {
+  margin-bottom: 20px;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+.promo__text {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.promo__action {
+  button {
+    border-radius: 5px;
+    background-color: #fff;
+    color: @body-color;
+    font-weight: 600;
+    padding: 16px 32px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.promo__pagination {
+  bottom: 12px !important;
+
+  @media (min-width: @breakpoint-md) {
+    bottom: 24px !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #bdc4c7;
+    opacity: 1;
+    width: 20%;
+    height: 4px;
+    border-radius: 1px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #0566aa;
+  }
+}
+
+.promo__prev,
+.promo__next {
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: auto;
+  bottom: 48px;
+  background-color: #fff;
+
+  @media (min-width: @breakpoint-md) {
+    bottom: 72px;
+  }
+
+  &::after {
+    font-size: 24px;
+  }
+}
+
+.promo__prev {
+  left: var(--block-gap-horizontal, @block-gap-horizontal);
+
+  @media (min-width: @breakpoint-xl) {
+    left: var(--promo-margin);
+  }
+}
+
+.promo__next {
+  left: ~"calc(var(--block-gap-horizontal, @{block-gap-horizontal}) + 56px)";
+
+  @media (min-width: @breakpoint-xl) {
+    left: ~"calc(var(--promo-margin) + 56px)";
+  }
+}
