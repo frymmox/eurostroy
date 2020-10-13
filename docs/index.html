@@ -345,6 +345,94 @@
   </div>
 </section>
 
+<section class="scene  main-form">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item  main-form__body">
+          <form class="form  main-form__form">
+            <div class="form__item  form__item--cover">
+              <div class="form__label">
+                <label for="city">Город</label>
+              </div>
+
+              <div class="form__field">
+                <div class="form__row">
+                  <div class="form__control">
+                    <select id="city" class="form__select">
+                      <option value="1" selected>Анапа</option>
+                      <option value="2">Геленджик</option>
+                      <option value="3">Новороссийск</option>
+                      <option value="4">Сочи</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__item  form__item--cover">
+              <div class="form__label">
+                <label for="object">Все объекты</label>
+              </div>
+
+              <div class="form__field">
+                <div class="form__row">
+                  <div class="form__control">
+                    <select id="object" class="form__select">
+                      <option value="1">Анапа</option>
+                      <option value="2">Геленджик</option>
+                      <option value="3">Новороссийск</option>
+                      <option value="4">Сочи</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="form__field">
+                <div class="form__row">
+                  <div class="form__control">
+                    <label class="main-form__radio">
+                      <input type="radio" name="rooms" checked>
+                      <span>S</span>
+                    </label>
+                  </div>
+
+                  <div class="form__control">
+                    <label class="main-form__radio">
+                      <input type="radio" name="rooms">
+                      <span>1k</span>
+                    </label>
+                  </div>
+
+                  <div class="form__control">
+                    <label class="main-form__radio">
+                      <input type="radio" name="rooms">
+                      <span>2k</span>
+                    </label>
+                  </div>
+
+                  <div class="form__control">
+                    <label class="main-form__radio">
+                      <input type="radio" name="rooms">
+                      <span>3k</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="ui-slider"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="scene">
   <div class="grid">
     <div class="grid__wrap">
@@ -396,16 +484,139 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
-                <img src="img/diagram.png" width="21" height="21" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
               </li>
               <li>
-                <img src="img/speed.png" width="19" height="19" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
               </li>
               <li>
-                <img src="img/correct.png" width="20" height="17" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+
+                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+
+                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3>ЖК «Черноморский»</h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+
+                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+
+                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3>ЖК «Черноморский»</h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
               </li>
             </ul>
 
@@ -447,67 +658,16 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
-                <img src="img/diagram.png" width="21" height="21" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
               </li>
               <li>
-                <img src="img/speed.png" width="19" height="19" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
               </li>
               <li>
-                <img src="img/correct.png" width="20" height="17" alt="">
-              </li>
-            </ul>
-
-            <div class="project-card__accent">
-              <img src="img/house@2x.jpg" alt="">
-            </div>
-
-            <div class="project-card__content">
-              <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
-                <p>г. Геленджик, ул. Крымская 19А</p>
-              </div>
-
-              <div class="project-card__table">
-                <div class="project-card__row">
-                  <span>Стоимость:</span>
-                  <span>от 3 500 233 ₽</span>
-                </div>
-
-                <div class="project-card__row">
-                  <span>Площадь:</span>
-                  <span>от 30,2 м2</span>
-                </div>
-
-                <div class="project-card__row">
-                  <span>Кол-во этажей:</span>
-                  <span>7-9</span>
-                </div>
-              </div>
-
-              <div class="project-card__footer">
-                Старт продаж корпус 13,14
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid__item">
-          <div class="project-card">
-            <ul class="project-card__icons">
-              <li>
-                <img src="img/discount.png" width="17" height="16" alt="">
-              </li>
-              <li>
-                <img src="img/diagram.png" width="21" height="21" alt="">
-              </li>
-              <li>
-                <img src="img/speed.png" width="19" height="19" alt="">
-              </li>
-              <li>
-                <img src="img/correct.png" width="20" height="17" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
               </li>
             </ul>
 
@@ -549,67 +709,16 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
-                <img src="img/diagram.png" width="21" height="21" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
               </li>
               <li>
-                <img src="img/speed.png" width="19" height="19" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
               </li>
               <li>
-                <img src="img/correct.png" width="20" height="17" alt="">
-              </li>
-            </ul>
-
-            <div class="project-card__accent">
-              <img src="img/house@2x.jpg" alt="">
-            </div>
-
-            <div class="project-card__content">
-              <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
-                <p>г. Геленджик, ул. Крымская 19А</p>
-              </div>
-
-              <div class="project-card__table">
-                <div class="project-card__row">
-                  <span>Стоимость:</span>
-                  <span>от 3 500 233 ₽</span>
-                </div>
-
-                <div class="project-card__row">
-                  <span>Площадь:</span>
-                  <span>от 30,2 м2</span>
-                </div>
-
-                <div class="project-card__row">
-                  <span>Кол-во этажей:</span>
-                  <span>7-9</span>
-                </div>
-              </div>
-
-              <div class="project-card__footer">
-                Старт продаж корпус 13,14
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid__item">
-          <div class="project-card">
-            <ul class="project-card__icons">
-              <li>
-                <img src="img/discount.png" width="17" height="16" alt="">
-              </li>
-              <li>
-                <img src="img/diagram.png" width="21" height="21" alt="">
-              </li>
-              <li>
-                <img src="img/speed.png" width="19" height="19" alt="">
-              </li>
-              <li>
-                <img src="img/correct.png" width="20" height="17" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
               </li>
             </ul>
 
@@ -651,16 +760,16 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
-                <img src="img/diagram.png" width="21" height="21" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
               </li>
               <li>
-                <img src="img/speed.png" width="19" height="19" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
               </li>
               <li>
-                <img src="img/correct.png" width="20" height="17" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
               </li>
             </ul>
 

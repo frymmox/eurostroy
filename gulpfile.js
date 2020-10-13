@@ -42,7 +42,8 @@ exports.styles = styles
 const stylesLibs = () => {
   return src([
     'node_modules/swiper/swiper-bundle.min.css',
-    'node_modules/tippy.js/dist/tippy.css'
+    'node_modules/tippy.js/dist/tippy.css',
+    'node_modules/nouislider/distribute/nouislider.min.css',
   ])
     .pipe(concat('libs.css'))
     .pipe(dest('docs'))
@@ -59,7 +60,9 @@ const scriptsLibs = () => {
       'node_modules/scroll-lock/dist/scroll-lock.min.js',
       'node_modules/inputmask/dist/inputmask.min.js',
       'node_modules/swiper/swiper-bundle.min.js',
-      'node_modules/tippy.js/dist/tippy-bundle.umd.min.js',
+      'node_modules/@popperjs/core/dist/umd/popper.min.js',
+      'node_modules/tippy.js/dist/tippy.umd.min.js',
+      'node_modules/nouislider/distribute/nouislider.min.js',
     ])
     .pipe(concat('libs.js'))
     .pipe(dest('docs'))

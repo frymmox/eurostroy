@@ -1,8 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin-right: -16px;
-  margin-bottom: -16px;
+  margin-right: -32px;
+  margin-bottom: -32px;
 }
 
 .form__item {
@@ -10,12 +10,18 @@
   display: flex;
   flex-direction: column;
   border: 0 solid transparent;
-  border-right-width: 16px;
-  border-bottom-width: 16px;
+  border-right-width: 32px;
+  border-bottom-width: 32px;
 }
 
 .form__label {
   margin-bottom: 8px;
+
+  .form__item--cover & {
+    position: absolute;
+    right: 31px;
+    top: 19px;
+  }
 }
 
 .form__row {
@@ -66,7 +72,7 @@
   #form.el();
   cursor: pointer;
   padding-right: 31px;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='%23ccc'%3E%3Cpath d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='%23222'%3E%3Cpath d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 7px top 55%;
   background-size: 24px 24px;
@@ -78,6 +84,10 @@
 
   &::-ms-expand {
     display: none;
+  }
+
+  .form__item--cover & {
+    color: #0566aa;
   }
 }
 

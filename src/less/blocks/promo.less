@@ -24,8 +24,11 @@
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  padding-right: var(--block-gap-horizontal, @block-gap-horizontal);
-  padding-left: var(--block-gap-horizontal, @block-gap-horizontal);
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    padding-right: var(--block-gap-horizontal, @block-gap-horizontal);
+    padding-left: var(--block-gap-horizontal, @block-gap-horizontal);
+  }
 
   @media (min-width: @breakpoint-md) {
     padding-top: 200px;

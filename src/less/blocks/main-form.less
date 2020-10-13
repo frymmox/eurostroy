@@ -1,0 +1,27 @@
+.main-form__form {
+  flex-direction: row;
+
+  .form__item {
+    width: 30%;
+  }
+}
+
+.main-form__radio {
+  display: flex;
+
+  input {
+    .visually-hidden;
+  }
+
+  span {
+    border: 1px solid #a9a9a9;
+    padding: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input:checked + span {
+    background-color: #0566aa;
+    color: #fff;
+  }
+}
