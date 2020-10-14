@@ -1,3 +1,7 @@
+.feedback {
+  padding-bottom: ~"calc(var(--block-gap-vertical, @{block-gap-vertical}) * 3)";
+}
+
 .feedback__item {
   width: ~"calc(100% - var(--element-gap-horizontal, @{element-gap-horizontal}))";
   border: 1px solid rgb(246, 246, 245);
@@ -47,7 +51,7 @@
 .feedback__button {
   background-color: rgb(5, 102, 170);
   box-shadow: 0px 5px 4px 0px rgba(8, 23, 23, 0.27);
-  padding: 19px 15px;
+  padding: 15px;
   width: 100%;
   text-transform: uppercase;
 }

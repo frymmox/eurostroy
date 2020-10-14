@@ -2,7 +2,7 @@
   @media (min-width: @breakpoint-lg) {
     position: absolute;
     width: 120%;
-    min-width: 150px;
+    min-width: 190px;
     top: 0;
     right: 0;
     z-index: 2;
@@ -28,13 +28,20 @@
 
   @media (min-width: @breakpoint-lg) {
     margin-top: 26px;
+    padding-bottom: 8px;
+    padding-right: 8px;
   }
 }
 
 .menu-dropdown__item {
   text-align: right;
+  white-space: nowrap;
 
   @media (max-width: @breakpoint-lg - 1px) {
     margin-top: 16px;
+  }
+
+  @media (min-width: @breakpoint-lg) {
+    padding: 8px;
   }
 }

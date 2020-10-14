@@ -72,14 +72,3 @@ const inputPhones = document.querySelectorAll('.input-phone')
 if(inputPhones) {
   Inputmask({"mask": "+7(999) 999-99-99"}).mask(inputPhones)
 }
-
-const slider = document.querySelector('.ui-slider')
-
-noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
-    }
-});

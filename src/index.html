@@ -96,9 +96,9 @@
         </div>
 
         <div class="grid__item">
-          <button type="button" class="btn">Показать на карте</button>
+          <button type="button" class="btn  btn--border  about__button">Показать на карте</button>
 
-          <img src="img/logo.png" width="224" height="109" alt="">
+          <img class="about__logo" src="img/logo.png" width="224" height="109" alt="">
         </div>
       </div>
 
@@ -259,31 +259,31 @@
               </div>
             </div>
 
-            <div class="form__item">
+            <div class="form__item" style="width: auto;">
               <div class="form__field">
                 <div class="form__row">
-                  <div class="form__control">
+                  <div class="form__control" style="flex-grow: 0;">
                     <label class="main-form__radio">
                       <input type="radio" name="rooms" checked>
                       <span>S</span>
                     </label>
                   </div>
 
-                  <div class="form__control">
+                  <div class="form__control" style="flex-grow: 0;">
                     <label class="main-form__radio">
                       <input type="radio" name="rooms">
                       <span>1k</span>
                     </label>
                   </div>
 
-                  <div class="form__control">
+                  <div class="form__control" style="flex-grow: 0;">
                     <label class="main-form__radio">
                       <input type="radio" name="rooms">
                       <span>2k</span>
                     </label>
                   </div>
 
-                  <div class="form__control">
+                  <div class="form__control" style="flex-grow: 0;">
                     <label class="main-form__radio">
                       <input type="radio" name="rooms">
                       <span>3k</span>
@@ -294,7 +294,93 @@
             </div>
 
             <div class="form__item">
-              <div class="ui-slider"></div>
+              <div class="input-floor">
+                <div class="input-floor__item">
+                  <span class="input-floor__text">Этаж</span>
+                  <span class="input-floor__pretext">от</span>
+                  <input class="form__input" placeholder="1">
+                </div>
+
+                <div class="input-floor__item">
+                  <span class="input-floor__pretext">до</span>
+                  <input class="form__input" placeholder="20">
+                </div>
+              </div>
+            </div>
+
+            <div class="form__item  form__item--large">
+              <div class="form-slider">
+                <div class="form-slider__main">
+                  <div class="form-slider__item">
+                    <span class="form-slider__text">Цена от</span> <span class="js-lower-price"></span> <span>₽</span>
+                  </div>
+
+                  <div class="form-slider__item">
+                    <span class="form-slider__text">до</span> <span class="js-upper-price"></span> <span>₽</span>
+                  </div>
+                </div>
+
+                <div class="form-slider__slider  js-slider-price"></div>
+              </div>
+            </div>
+
+            <div class="form__item  form__item--large">
+              <div class="form-slider">
+                <div class="form-slider__main">
+                  <div class="form-slider__item">
+                    <span class="form-slider__text">Площадь от</span> <span class="js-lower-area"></span> <span>м<sup>2</sup></span>
+                  </div>
+
+                  <div class="form-slider__item">
+                    <span class="form-slider__text">до</span> <span class="js-upper-area"></span> <span>м<sup>2</sup></span>
+                  </div>
+                </div>
+
+                <div class="form-slider__slider  js-slider-area"></div>
+              </div>
+            </div>
+
+            <div class="form__item" style="width: auto;">
+              <div class="form__field">
+                <div class="form__row">
+                  <div class="form__control" style="flex-grow: 0;">
+                    <label class="main-form__radio">
+                      <input type="radio" name="type" checked>
+                      <span>От застройщика</span>
+                    </label>
+                  </div>
+
+                  <div class="form__control" style="flex-grow: 0;">
+                    <label class="main-form__radio">
+                      <input type="radio" name="type">
+                      <span>Переуступка</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="form__field">
+                <div class="form__row">
+                  <div class="form__control">
+                    <label class="form__checkbox">
+                      <input type="checkbox">
+                      <span>C ремонтом</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="form__field">
+                <div class="form__row">
+                  <div class="form__control">
+                    <button class="btn  main-form__submit" type="submit">Показать варианты</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -306,7 +392,7 @@
 <section class="scene">
   <div class="grid">
     <div class="grid__wrap">
-      <div class="grid__list  grid__list--two" style="align-items: center;">
+      <div class="grid__list  grid__list--two-xl" style="align-items: center;">
         <div class="grid__item">
           <h2>Объекты в продаже</h2>
         </div>
@@ -812,7 +898,7 @@
 <section class="scene  implemented-project">
   <div class="grid">
     <div class="grid__wrap">
-      <div class="grid__list  grid__list--two" style="align-items: center;">
+      <div class="grid__list  grid__list--two-xl" style="align-items: center;">
         <div class="grid__item">
           <h2>Реализованные проекты</h2>
         </div>
@@ -855,7 +941,7 @@
         </div>
       </div>
 
-      <div class="grid__list">
+      <div class="grid__list  implemented-project__list">
         <div class="grid__item">
           <div class="swiper-container  implemented-project__slider">
             <div class="swiper-wrapper">
@@ -1022,6 +1108,18 @@
             <div class="swiper-button-prev  video__prev"></div>
             <div class="swiper-button-next  video__next"></div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <img src="img/banner.jpg" alt="">
         </div>
       </div>
     </div>
