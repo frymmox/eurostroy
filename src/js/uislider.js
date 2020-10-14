@@ -21,7 +21,7 @@ noUiSlider.create(sliderPrice, {
   format: {
     to: (value) => Number(value).toFixed(0),
     from: (value) => Number(value).toFixed(0)
-  }
+  },
 })
 
 noUiSlider.create(sliderArea, {
