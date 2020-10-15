@@ -44,6 +44,7 @@ const stylesLibs = () => {
     'node_modules/swiper/swiper-bundle.min.css',
     'node_modules/tippy.js/dist/tippy.css',
     'node_modules/nouislider/distribute/nouislider.min.css',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
   ])
     .pipe(concat('libs.css'))
     .pipe(dest('docs'))
@@ -63,6 +64,8 @@ const scriptsLibs = () => {
       'node_modules/@popperjs/core/dist/umd/popper.min.js',
       'node_modules/tippy.js/dist/tippy.umd.min.js',
       'node_modules/nouislider/distribute/nouislider.min.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'
     ])
     .pipe(concat('libs.js'))
     .pipe(dest('docs'))
