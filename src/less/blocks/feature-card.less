@@ -1,11 +1,7 @@
 .feature-card {
   position: relative;
   overflow: hidden;
-  height: 400;
-
-  @media (min-width: @breakpoint-md) {
-    height: 500px;
-  }
+  height: 400px;
 
   @media (min-width: @breakpoint-lg) {
     height: 450px;
@@ -36,10 +32,6 @@
 .feature-card__accent {
   transform: perspective(500px) rotateY(0);
   z-index: 0;
-
-  @media (max-width: @breakpoint-xl - 1px) {
-    padding: 16px;
-  }
 
   &::before {
     content: '';
@@ -111,37 +103,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  &--static {
-    padding: 32px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 0 0 16px 16px;
-      overflow: hidden;
-      background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0), rgba(78, 78, 78, 0.6));
-    }
-  }
-
-  &--gradient {
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 50%;
-      bottom: 0;
-      background-image: linear-gradient(to right,  rgba(245, 245, 245, 1) 60%, rgba(245, 245, 245, 0));
-      border-radius: 16px 0 0 16px;
-      overflow: hidden;
-      z-index: -1;
-    }
-  }
 }
 
 .feature-card__image {

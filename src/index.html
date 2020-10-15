@@ -219,170 +219,172 @@
   <div class="grid">
     <div class="grid__wrap">
       <div class="grid__list">
-        <div class="grid__item  main-form__body">
-          <form class="form  main-form__form">
-            <div class="form__item  form__item--cover">
-              <div class="form__label">
-                <label for="city">Город</label>
-              </div>
+        <div class="grid__item">
+          <div class="main-form__body">
+            <form class="form  main-form__form">
+              <div class="form__item  form__item--cover">
+                <div class="form__label">
+                  <label for="city">Город</label>
+                </div>
 
-              <div class="form__field">
-                <div class="form__row">
-                  <div class="form__control">
-                    <select id="city" class="form__select">
-                      <option value="1" selected>Анапа</option>
-                      <option value="2">Геленджик</option>
-                      <option value="3">Новороссийск</option>
-                      <option value="4">Сочи</option>
-                    </select>
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <select id="city" class="form__select">
+                        <option value="1" selected>Анапа</option>
+                        <option value="2">Геленджик</option>
+                        <option value="3">Новороссийск</option>
+                        <option value="4">Сочи</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form__item  form__item--cover">
-              <div class="form__label">
-                <label for="object">Все объекты</label>
-              </div>
+              <div class="form__item  form__item--cover">
+                <div class="form__label">
+                  <label for="object">Все объекты</label>
+                </div>
 
-              <div class="form__field">
-                <div class="form__row">
-                  <div class="form__control">
-                    <select id="object" class="form__select">
-                      <option value="1">Анапа</option>
-                      <option value="2">Геленджик</option>
-                      <option value="3">Новороссийск</option>
-                      <option value="4">Сочи</option>
-                    </select>
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <select id="object" class="form__select">
+                        <option value="1">Анапа</option>
+                        <option value="2">Геленджик</option>
+                        <option value="3">Новороссийск</option>
+                        <option value="4">Сочи</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form__item" style="width: auto;">
-              <div class="form__field">
-                <div class="form__row">
-                  <div class="form__control" style="flex-grow: 0;">
-                    <label class="main-form__radio">
-                      <input type="radio" name="rooms" checked>
-                      <span>S</span>
-                    </label>
-                  </div>
+              <div class="form__item" style="width: auto;">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms" checked>
+                        <span>S</span>
+                      </label>
+                    </div>
 
-                  <div class="form__control" style="flex-grow: 0;">
-                    <label class="main-form__radio">
-                      <input type="radio" name="rooms">
-                      <span>1k</span>
-                    </label>
-                  </div>
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms">
+                        <span>1k</span>
+                      </label>
+                    </div>
 
-                  <div class="form__control" style="flex-grow: 0;">
-                    <label class="main-form__radio">
-                      <input type="radio" name="rooms">
-                      <span>2k</span>
-                    </label>
-                  </div>
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms">
+                        <span>2k</span>
+                      </label>
+                    </div>
 
-                  <div class="form__control" style="flex-grow: 0;">
-                    <label class="main-form__radio">
-                      <input type="radio" name="rooms">
-                      <span>3k</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form__item">
-              <div class="input-floor">
-                <div class="input-floor__item">
-                  <span class="input-floor__text">Этаж</span>
-                  <span class="input-floor__pretext">от</span>
-                  <input class="form__input" placeholder="1">
-                </div>
-
-                <div class="input-floor__item">
-                  <span class="input-floor__pretext">до</span>
-                  <input class="form__input" placeholder="20">
-                </div>
-              </div>
-            </div>
-
-            <div class="form__item  form__item--large">
-              <div class="form-slider">
-                <div class="form-slider__main">
-                  <div class="form-slider__item">
-                    <span class="form-slider__text">Цена от</span> <span class="js-lower-price"></span> <span>₽</span>
-                  </div>
-
-                  <div class="form-slider__item">
-                    <span class="form-slider__text">до</span> <span class="js-upper-price"></span> <span>₽</span>
-                  </div>
-                </div>
-
-                <div class="form-slider__slider  js-slider-price"></div>
-              </div>
-            </div>
-
-            <div class="form__item  form__item--large">
-              <div class="form-slider">
-                <div class="form-slider__main">
-                  <div class="form-slider__item">
-                    <span class="form-slider__text">Площадь от</span> <span class="js-lower-area"></span> <span>м<sup>2</sup></span>
-                  </div>
-
-                  <div class="form-slider__item">
-                    <span class="form-slider__text">до</span> <span class="js-upper-area"></span> <span>м<sup>2</sup></span>
-                  </div>
-                </div>
-
-                <div class="form-slider__slider  js-slider-area"></div>
-              </div>
-            </div>
-
-            <div class="form__item" style="width: auto;">
-              <div class="form__field">
-                <div class="form__row">
-                  <div class="form__control" style="flex-grow: 0;">
-                    <label class="main-form__radio">
-                      <input type="radio" name="type" checked>
-                      <span>От застройщика</span>
-                    </label>
-                  </div>
-
-                  <div class="form__control" style="flex-grow: 0;">
-                    <label class="main-form__radio">
-                      <input type="radio" name="type">
-                      <span>Переуступка</span>
-                    </label>
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms">
+                        <span>3k</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form__item">
-              <div class="form__field">
-                <div class="form__row">
-                  <div class="form__control">
-                    <label class="form__checkbox">
-                      <input type="checkbox">
-                      <span>C ремонтом</span>
-                    </label>
+              <div class="form__item">
+                <div class="input-floor">
+                  <div class="input-floor__item">
+                    <span class="input-floor__text">Этаж</span>
+                    <span class="input-floor__pretext">от</span>
+                    <input class="form__input" placeholder="1">
+                  </div>
+
+                  <div class="input-floor__item">
+                    <span class="input-floor__pretext">до</span>
+                    <input class="form__input" placeholder="20">
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form__item">
-              <div class="form__field">
-                <div class="form__row">
-                  <div class="form__control">
-                    <button class="btn  main-form__submit" type="submit">Показать варианты</button>
+              <div class="form__item  form__item--large">
+                <div class="form-slider">
+                  <div class="form-slider__main">
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">Цена от</span> <span class="js-lower-price"></span> <span>₽</span>
+                    </div>
+
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">до</span> <span class="js-upper-price"></span> <span>₽</span>
+                    </div>
+                  </div>
+
+                  <div class="form-slider__slider  js-slider-price"></div>
+                </div>
+              </div>
+
+              <div class="form__item  form__item--large">
+                <div class="form-slider">
+                  <div class="form-slider__main">
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">Площадь от</span> <span class="js-lower-area"></span> <span>м<sup>2</sup></span>
+                    </div>
+
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">до</span> <span class="js-upper-area"></span> <span>м<sup>2</sup></span>
+                    </div>
+                  </div>
+
+                  <div class="form-slider__slider  js-slider-area"></div>
+                </div>
+              </div>
+
+              <div class="form__item" style="width: auto;">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="type" checked>
+                        <span>От застройщика</span>
+                      </label>
+                    </div>
+
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="type">
+                        <span>Переуступка</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <label class="form__checkbox">
+                        <input type="checkbox">
+                        <span>C ремонтом</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  main-form__submit" type="submit">Показать варианты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -440,7 +442,7 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
@@ -456,11 +458,11 @@
             <div class="project-card__accent">
               <div class="swiper-container  project-card__slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
 
-                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
 
-                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
                 </div>
 
                 <div class="swiper-pagination  project-card__pagination"></div>
@@ -469,7 +471,7 @@
 
             <div class="project-card__content">
               <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
                 <p>г. Геленджик, ул. Крымская 19А</p>
               </div>
 
@@ -501,7 +503,7 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
@@ -512,17 +514,16 @@
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
               </li>
-            </ul>
             </ul>
 
             <div class="project-card__accent">
               <div class="swiper-container  project-card__slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
 
-                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
 
-                    <div class="swiper-slide  project-card__slide"><img src="img/house@2x.jpg" alt=""></div>
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
                 </div>
 
                 <div class="swiper-pagination  project-card__pagination"></div>
@@ -531,7 +532,7 @@
 
             <div class="project-card__content">
               <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
                 <p>г. Геленджик, ул. Крымская 19А</p>
               </div>
 
@@ -563,7 +564,7 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
@@ -577,12 +578,22 @@
             </ul>
 
             <div class="project-card__accent">
-              <img src="img/house@2x.jpg" alt="">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
             </div>
 
             <div class="project-card__content">
               <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
                 <p>г. Геленджик, ул. Крымская 19А</p>
               </div>
 
@@ -614,7 +625,7 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
@@ -628,12 +639,22 @@
             </ul>
 
             <div class="project-card__accent">
-              <img src="img/house@2x.jpg" alt="">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
             </div>
 
             <div class="project-card__content">
               <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
                 <p>г. Геленджик, ул. Крымская 19А</p>
               </div>
 
@@ -665,7 +686,7 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
@@ -679,12 +700,22 @@
             </ul>
 
             <div class="project-card__accent">
-              <img src="img/house@2x.jpg" alt="">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
             </div>
 
             <div class="project-card__content">
               <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
                 <p>г. Геленджик, ул. Крымская 19А</p>
               </div>
 
@@ -716,7 +747,7 @@
           <div class="project-card">
             <ul class="project-card__icons">
               <li>
-                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
               </li>
               <li>
                 <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
@@ -730,12 +761,22 @@
             </ul>
 
             <div class="project-card__accent">
-              <img src="img/house@2x.jpg" alt="">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
             </div>
 
             <div class="project-card__content">
               <div class="project-card__header">
-                <h3>ЖК «Черноморский»</h3>
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
                 <p>г. Геленджик, ул. Крымская 19А</p>
               </div>
 
@@ -1044,12 +1085,12 @@
               <div class="swiper-slide">
                 <div class="project-card">
                   <div class="project-card__accent">
-                    <img src="img/house@2x.jpg" alt="">
+                    <a href="#"><img src="img/house@2x.jpg" alt=""></a>
                   </div>
 
                   <div class="project-card__content">
                     <div class="project-card__header">
-                      <h3>ЖК «Черноморский»</h3>
+                      <h3><a href="#">ЖК «Черноморский»</a></h3>
                       <p>г. Геленджик, ул. Крымская 19А</p>
                     </div>
 
@@ -1080,12 +1121,12 @@
               <div class="swiper-slide">
                 <div class="project-card">
                   <div class="project-card__accent">
-                    <img src="img/house@2x.jpg" alt="">
+                    <a href="#"><img src="img/house@2x.jpg" alt=""></a>
                   </div>
 
                   <div class="project-card__content">
                     <div class="project-card__header">
-                      <h3>ЖК «Черноморский»</h3>
+                      <h3><a href="#">ЖК «Черноморский»</a></h3>
                       <p>г. Геленджик, ул. Крымская 19А</p>
                     </div>
 
@@ -1116,12 +1157,12 @@
               <div class="swiper-slide">
                 <div class="project-card">
                   <div class="project-card__accent">
-                    <img src="img/house@2x.jpg" alt="">
+                    <a href="#"><img src="img/house@2x.jpg" alt=""></a>
                   </div>
 
                   <div class="project-card__content">
                     <div class="project-card__header">
-                      <h3>ЖК «Черноморский»</h3>
+                      <h3><a href="#">ЖК «Черноморский»</a></h3>
                       <p>г. Геленджик, ул. Крымская 19А</p>
                     </div>
 
@@ -1215,7 +1256,7 @@
     <div class="grid__wrap">
       <div class="grid__list">
         <div class="grid__item">
-          <img src="img/banner.jpg" alt="">
+          <a href="#"><img src="img/banner.jpg" alt=""></a>
         </div>
       </div>
     </div>
@@ -1233,7 +1274,7 @@
               <div class="swiper-slide">
                 <div class="news-card">
                   <div class="news-card__title">
-                    <h3>Максимальная выгода — успейте до конца лета!</h3>
+                    <h3><a href="#">Максимальная выгода — успейте до конца лета</a>!</h3>
                   </div>
 
                   <div class="news-card__text">
@@ -1249,7 +1290,7 @@
               <div class="swiper-slide">
                 <div class="news-card">
                   <div class="news-card__title">
-                    <h3>Дарим парковку при покупке 3-х ком. квартиры</h3>
+                    <h3><a href="#">Максимальная выгода — успейте до конца лета</a>!</h3>
                   </div>
 
                   <div class="news-card__text">
@@ -1265,7 +1306,7 @@
               <div class="swiper-slide">
                 <div class="news-card">
                   <div class="news-card__title">
-                    <h3>Построили и подарили детский сад на 200 мест</h3>
+                    <h3><a href="#">Максимальная выгода — успейте до конца лета</a>!</h3>
                   </div>
 
                   <div class="news-card__text">
@@ -1281,7 +1322,7 @@
               <div class="swiper-slide">
                 <div class="news-card">
                   <div class="news-card__title">
-                    <h3>Построили и подарили детский сад на 200 мест</h3>
+                    <h3><a href="#">Максимальная выгода — успейте до конца лета</a>!</h3>
                   </div>
 
                   <div class="news-card__text">
