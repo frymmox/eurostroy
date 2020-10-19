@@ -1,53 +1,58 @@
 .contacts {
   padding-top: 0;
+  padding-bottom: 0;
 
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-md) {
     flex-grow: 1;
   }
 }
 
 .contacts__grid {
-  @media (max-width: @breakpoint-xl - 1px) {
+  @media (max-width: @breakpoint-md - 1px) {
     --element-gap-vertical: 0;
   }
 
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-md) {
     flex-grow: 1;
   }
 }
 
 .contacts__content,
 .contacts__accent {
-  @media (max-width: @breakpoint-xl - 1px) {
+  @media (max-width: @breakpoint-md - 1px) {
     width: 100% !important;
   }
 }
 
 .contacts__content {
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-md) {
     align-self: center;
     padding-top: 16px;
     padding-bottom: 16px;
+    width: 50%;
+  }
+
+  @media (min-width: @breakpoint-lg) {
     width: 33.33%;
     margin-right: 16.66%;
   }
 }
 
 .contacts__accent {
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-md) {
     width: 50%;
   }
 }
 
 .contacts__map {
-  @media (max-width: @breakpoint-xl - 1px) {
+  @media (max-width: @breakpoint-md - 1px) {
     height: 50vh;
     min-height: 300px;
     margin-left: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
     margin-right: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
   }
 
-  @media (min-width: @breakpoint-xl) {
+  @media (min-width: @breakpoint-md) {
     height: 100%;
     width: 100vw;
     margin-left: ~"calc(-50vw - var(--element-gap-horizontal, @{element-gap-horizontal}) / 1.5)";

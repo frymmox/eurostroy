@@ -1,0 +1,60 @@
+.complex-about__header {
+  @media (min-width: @breakpoint-md) {
+    align-items: center;
+    justify-content: space-between;
+
+    .grid__item {
+      &:first-child {
+        width: 66.66%;
+      }
+
+      &:last-child {
+        width: 33.33%;
+      }
+    }
+  }
+
+  @media (min-width: @breakpoint-lg) {
+    .grid__item {
+      &:first-child {
+        width: 75%;
+      }
+
+      &:last-child {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.complex-about__button {
+  @media (min-width: @breakpoint-md) {
+    text-align: right;
+  }
+}
+
+.complex-about__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.complex-about__text {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 32px;
+}
+
+.complex__features {
+  margin-bottom: 16px;
+}
+
+.complex-about__desc {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.complex-about__info {
+  margin-top: auto;
+}

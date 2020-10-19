@@ -1,0 +1,105 @@
+.complex-about-media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
+  margin-bottom: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
+}
+
+.complex-about-media__item {
+  width: 100%;
+  border: 0 solid transparent;
+  border-right-width: var(--element-gap-horizontal, @element-gap-horizontal);
+  border-bottom-width: var(--element-gap-horizontal, @element-gap-horizontal);
+
+  @media (min-width: @breakpoint-md) {
+    &:not(:first-child) {
+      width: 50%;
+    }
+  }
+}
+
+.complex-about-media__card {
+  border-radius: @border-radius;
+  overflow: hidden;
+}
+
+.complex-about-media__image {
+  padding-bottom: 80%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+  }
+
+  .complex-about-media__card--gallery & {
+    background-color: rgba(20, 45, 62, 0.4);
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.complex-about-media__gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.complex-about-media__slide {
+  padding-bottom: 80%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.complex-about-media__prev,
+.complex-about-media__next {
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: auto;
+  bottom: 24px;
+  background-color: #fff;
+
+  &::after {
+    font-size: 24px;
+  }
+}
+
+.complex-about-media__prev {
+  left: auto;
+  right: 88px;
+}
+
+.complex-about-media__next {
+  right: 32px;
+}

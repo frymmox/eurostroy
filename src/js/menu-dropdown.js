@@ -1,4 +1,4 @@
-if (document.documentElement.clientWidth < 1300) {
+if (document.documentElement.clientWidth < 992) {
   document.querySelectorAll(".js-collapse-toggle").forEach((el) => {
     el.addEventListener("click", (e) => {
       e.preventDefault();

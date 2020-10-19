@@ -85,3 +85,10 @@ const swiperConstructionProgress = new Swiper('.construction-progress__slider', 
     prevEl: '.construction-progress__prev',
   },
 })
+
+const swiperComplexAbout = new Swiper('.complex-about-media__slider', {
+  navigation: {
+    nextEl: '.complex-about-media__next',
+    prevEl: '.complex-about-media__prev',
+  },
+})

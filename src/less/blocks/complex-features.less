@@ -1,0 +1,23 @@
+.complex-features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
+  margin-bottom: ~"calc(var(--element-gap-horizontal, @{element-gap-horizontal}) * -1)";
+}
+
+.complex-features__item {
+  width: 100%;
+  border: 0 solid transparent;
+  border-right-width: var(--element-gap-horizontal, @element-gap-horizontal);
+  border-bottom-width: var(--element-gap-horizontal, @element-gap-horizontal);
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @breakpoint-md) {
+    width: 50%;
+  }
+
+  img {
+    margin-right: 8px;
+  }
+}
