@@ -5,7 +5,7 @@
 .collapse-card__body {
   display: flex;
   flex-direction: column;
-  height: 170px;
+  height: 200px;
   border: 1px solid #e5e5e5;
   border-radius: @border-radius;
   padding-top: 16px;
@@ -13,7 +13,7 @@
   padding-left: 24px;
   padding-bottom: 24px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
   background-color: #fdfdfd;
 }
 
@@ -24,35 +24,56 @@
 .collapse-card__content {
   margin-top: auto;
   position: relative;
-  z-index: 200;
+  z-index: 2;
 }
 
 .collapse-card__icon {
   margin-bottom: 8px;
 }
 
+.collapse-card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  img {
+    transform: rotate(90deg);
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+    transition-property: transform;
+  }
+
+  &--show {
+    img {
+      transform: rotate(270deg);
+    }
+  }
+}
+
 .collapse-card__collapse {
   position: absolute;
-  top: 162px;
+  top: 192px;
   left: 0;
   right: 0;
   background-color: #fdfdfd;
-  z-index: 2;
+  z-index: 100;
   transform: translateY(-85px);
   opacity: 0;
   border: 1px solid #e5e5e5;
   border-top: none;
   border-radius: 0 0 @border-radius @border-radius;
-  max-height: 480px;
+  max-height: 0;
   overflow-y: auto;
   transition-duration: 0.35s;
   transition-timing-function: cubic-bezier(0, 1, 0, 1);
-  transition-property: transform, opacity;
+  transition-property: transform, opacity, max-height;
 
   &--show {
     transform: translateY(0);
     opacity: 1;
     transition-timing-function: ease-in-out;
+    max-height: 480px;
   }
 }
 
@@ -78,6 +99,25 @@
       &::before {
         display: none;
       }
+    }
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: #0e8099;
+
+    &:hover {
+      color: #c50555;
     }
   }
 }

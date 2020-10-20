@@ -1,0 +1,29 @@
+.infrastructure__slider {
+  padding-top: 3.5rem;
+  margin-top: -2.5rem;
+  overflow: auto;
+}
+
+.infrastructure__prev,
+.infrastructure__next {
+  border: 1px solid @body-color;
+  border-radius: 50%;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  top: 16px;
+
+  &::after {
+    font-size: 16px;
+  }
+}
+
+.infrastructure__prev {
+  left: auto;
+  right: 40px;
+}
+
+.infrastructure__next {
+  right: 0;
+}

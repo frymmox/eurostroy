@@ -9,6 +9,17 @@ const swiperPromo = new Swiper('.promo__slider', {
   },
 })
 
+const swiperComplexPromo = new Swiper('.complex-promo__slider', {
+  pagination: {
+    el: '.complex-promo__pagination',
+  },
+
+  navigation: {
+    nextEl: '.complex-promo__next',
+    prevEl: '.complex-promo__prev',
+  },
+})
+
 const swiperProjectCard = new Swiper('.project-card__slider', {
   pagination: {
     el: '.project-card__pagination',
@@ -90,5 +101,38 @@ const swiperComplexAbout = new Swiper('.complex-about-media__slider', {
   navigation: {
     nextEl: '.complex-about-media__next',
     prevEl: '.complex-about-media__prev',
+  },
+})
+
+const swiperPaymentPromo = new Swiper('.payment-promo__slider', {
+  navigation: {
+    nextEl: '.payment-promo__next',
+    prevEl: '.payment-promo__prev',
+  },
+})
+
+const swiperVirtualTour = new Swiper('.slider-3d__slider', {
+  navigation: {
+    nextEl: '.slider-3d__next',
+    prevEl: '.slider-3d__prev',
+  },
+})
+
+const swiperInfrastructure = new Swiper('.infrastructure__slider', {
+  slidesPerView: 1,
+  spaceBetween: 32,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    }
+  },
+
+  navigation: {
+    nextEl: '.infrastructure__next',
+    prevEl: '.infrastructure__prev',
   },
 })

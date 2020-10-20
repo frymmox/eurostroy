@@ -1,0 +1,36 @@
+.tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+
+  li {
+    margin-bottom: 40px;
+
+    &:first-child {
+      .tabs__frame {
+        border-radius: 5px 0 0 5px;
+      }
+    }
+
+    &:last-child {
+      .tabs__frame {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+
+  input {
+    .visually-hidden;
+  }
+
+  input:checked + span {
+    color: #fff;
+    background-color: #0566aa;
+  }
+
+  .tabs__frame {
+    padding: 16px 20px;
+    background-color: #eeeeee;
+    cursor: pointer;
+  }
+}
