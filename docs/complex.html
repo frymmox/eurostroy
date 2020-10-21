@@ -1045,6 +1045,18 @@
     <div class="grid__wrap">
       <div class="grid__list">
         <div class="grid__item">
+          <button type="button" class="btn  js-modal-section-open">Купить квартиру</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
           <h2>Ремонт от застройщика</h2>
         </div>
       </div>
@@ -1077,31 +1089,25 @@
                   <li>
                     <label>
                       <input type="radio" name="object" value="mortgage" checked>
-                      <span class="tabs__frame">Ипотека</span>
+                      <span class="tabs__frame">Гостиная</span>
                     </label>
                   </li>
                   <li>
                     <label>
                       <input type="radio" name="object" value="maternity-capital">
-                      <span class="tabs__frame">Материнский капитал</span>
+                      <span class="tabs__frame">Спальня</span>
                     </label>
                   </li>
                   <li>
                     <label>
                       <input type="radio" name="object" value="installment">
-                      <span class="tabs__frame">Рассрочка без %</span>
+                      <span class="tabs__frame">Прихожая</span>
                     </label>
                   </li>
                   <li>
                     <label>
                       <input type="radio" name="object" value="military-mortgage">
-                      <span class="tabs__frame">Военная ипотека</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="radio" name="object" value="full-payment">
-                      <span class="tabs__frame">100% оплата</span>
+                      <span class="tabs__frame">Ванная комната</span>
                     </label>
                   </li>
                 </ul>
@@ -1924,6 +1930,59 @@
   </div>
 </footer>
 
+
+<div class="modal  js-modal-section">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+    <div class="modal__close">
+      <button class="js-modal-section-close" aria-label="Закрыть" type="button">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#cross-white"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__content">
+      <section class="scene  selecting-section">
+        <div class="grid">
+          <div class="grid__wrap">
+            <div class="grid__list  grid__list--three">
+              <div class="grid__item">
+                <h2>Литер: 4</h2>
+              </div>
+
+              <div class="grid__item">
+                <div class="tabs">
+                  <ul class="tabs__list">
+                    <li>
+                      <label>
+                        <input type="radio" name="section" value="section-1" checked>
+                        <span class="tabs__frame">Секция 1</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="section" value="section-2">
+                        <span class="tabs__frame">Секция 2</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="section" value="section-3">
+                        <span class="tabs__frame">Секция 3</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
     </div>
     <script src="libs.js"></script>
