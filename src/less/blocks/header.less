@@ -59,6 +59,17 @@
   }
 }
 
+.header__logo--complex {
+  display: none;
+  margin-left: 32px;
+
+  .header--complex & {
+    @media (min-width: @breakpoint-md) {
+      display: block;
+    }
+  }
+}
+
 .header__phone {
   margin-right: 32px;
   margin-left: auto;

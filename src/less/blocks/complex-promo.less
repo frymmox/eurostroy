@@ -1,12 +1,20 @@
 .complex-promo__slide {
   box-sizing: border-box;
   position: relative;
-  background-color: #354f55;
-  opacity: 0.85;
   color: #fff;
   min-height: 350px;
   display: flex;
   align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 44, 61, 0.4);
+  }
 
   @media (min-width: @breakpoint-md) {
     min-height: 550px;
@@ -31,6 +39,7 @@
   position: relative;
   padding-top: 64px;
   padding-bottom: 64px;
+  z-index: 1;
 
   @media (max-width: @breakpoint-xl - 1px) {
     padding-right: var(--block-gap-horizontal, @block-gap-horizontal);

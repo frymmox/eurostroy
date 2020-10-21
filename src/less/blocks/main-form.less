@@ -4,6 +4,41 @@
   }
 }
 
+.main-form__header {
+  @media (min-width: @breakpoint-md) {
+    align-items: center;
+    justify-content: space-between;
+
+    .grid__item {
+      &:first-child {
+        width: 66.66%;
+      }
+
+      &:last-child {
+        width: 33.33%;
+      }
+    }
+  }
+
+  @media (min-width: @breakpoint-lg) {
+    .grid__item {
+      &:first-child {
+        width: 75%;
+      }
+
+      &:last-child {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.main-form__button {
+  @media (min-width: @breakpoint-md) {
+    text-align: right;
+  }
+}
+
 .main-form__body {
   border: 1px solid rgb(246, 246, 245);
   padding: 15px;

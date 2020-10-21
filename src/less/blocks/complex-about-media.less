@@ -21,6 +21,14 @@
 .complex-about-media__card {
   border-radius: @border-radius;
   overflow: hidden;
+
+  &--gallery {
+    cursor: pointer;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .complex-about-media__image {
@@ -43,10 +51,6 @@
 
   .complex-about-media__card--gallery & {
     background-color: rgba(20, 45, 62, 0.4);
-  }
-
-  &:hover img {
-    transform: scale(1.1);
   }
 }
 

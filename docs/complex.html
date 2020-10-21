@@ -14,7 +14,7 @@
     <div class="page">
 
 
-<header class="header">
+<header class="header  header--complex">
   <div class="header__wrap">
     <div class="header__list">
       <div class="header__fold">
@@ -23,6 +23,10 @@
             <a href="index.html">
               <img src="img/logo.png" width="132" height="65" alt="">
             </a>
+          </li>
+
+          <li class="header__logo  header__logo--complex">
+            <img src="img/logo-complex.png" width="193" height="57" alt="">
           </li>
 
           <li class="header__phone">
@@ -176,11 +180,12 @@
       <div class="grid__list  complex-about__header">
         <div class="grid__item">
           <h2>Жилой комплекс «Черное море»</h2>
-          <p>г. Анапа, ул. Анапское шоссе, 30</p>
+
+          <p class="complex-about__subtitle">г. Анапа, ул. Анапское шоссе, 30</p>
         </div>
 
         <div class="grid__item  complex-about__button">
-          <button type="button" class="btn  btn--border">Показать на карте</button>
+          <a href="#map" type="button" class="btn  btn--map">Показать на карте</a>
         </div>
       </div>
 
@@ -282,17 +287,22 @@
     <div class="grid__wrap">
       <div class="grid__list  grid__list--two">
         <div class="grid__item">
-          <h2>Инфраструктура района. Все лучшее рядом!</h2>
-
-          <button type="button" class="btn  btn--border">Показать на карте</button>
+          <div class="infrastructure__title">
+            <h2>Инфраструктура района. Все лучшее рядом!</h2>
+          </div>
+          <div class="infrastructure__button">
+            <a href="#map" type="button" class="btn  btn--map">Показать на карте</a>
+          </div>
         </div>
 
         <div class="grid__item">
-          <p>Жилой комплекс расположен в современном районе города с инфраструктурой и развитой транспортной сетью. У жителей есть возможность быстро добраться на пляж — дорога к морю займет всего 15 минут. Также предусмотрено все необходимое для вашего комфорта.</p>
+          <div class="infrastructure__text">
+            <p>Жилой комплекс расположен в современном районе города с инфраструктурой и развитой транспортной сетью. У жителей есть возможность быстро добраться на пляж — дорога к морю займет всего 15 минут. Также предусмотрено все необходимое для вашего комфорта.</p>
+          </div>
         </div>
       </div>
 
-      <div class="grid__list">
+      <div class="grid__list  infrastructure__main">
         <div class="grid__item">
           <div class="swiper-container  infrastructure__slider">
             <div class="swiper-wrapper">
@@ -305,18 +315,59 @@
 
                     <div class="collapse-card__content">
                       <div class="collapse-card__icon">
-                        <img src="img/document@2x.png" width="42" height="50" alt="">
+                        <img src="img/child@2x.png" width="44" height="46" alt="">
                       </div>
 
-                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#permits">
-                        <h3>Разрешительная документация</h3>
+                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#child">
+                        <h3>Детские сады</h3>
 
                         <img src="img/arrow-right.png" width="25" height="25" alt="">
                       </div>
                     </div>
                   </div>
 
-                  <div class="collapse-card__collapse" id="permits">
+                  <div class="collapse-card__collapse" id="child">
+                    <ul class="collapse-card__docs">
+                      <li>
+                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
+
+                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
+
+                        <a href="#">Открыть документ</a>
+                      </li>
+                      <li>
+                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
+
+                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
+
+                        <a href="#">Открыть документ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide  infrastructure__slide">
+                <div class="collapse-card">
+                  <div class="collapse-card__body">
+                    <div class="collapse-card__object" style="color: #e30050;">
+                      2 объекта
+                    </div>
+
+                    <div class="collapse-card__content">
+                      <div class="collapse-card__icon">
+                        <img src="img/health@2x.png" width="50" height="46" alt="">
+                      </div>
+
+                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#health">
+                        <h3>Поликлиники</h3>
+
+                        <img src="img/arrow-right.png" width="25" height="25" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="collapse-card__collapse" id="health">
                     <ul class="collapse-card__docs">
                       <li>
                         <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
@@ -382,24 +433,24 @@
               <div class="swiper-slide  infrastructure__slide">
                 <div class="collapse-card">
                   <div class="collapse-card__body">
-                    <div class="collapse-card__object" style="color: #0e8099;">
+                    <div class="collapse-card__object" style="color: #8ec949;">
                       2 объекта
                     </div>
 
                     <div class="collapse-card__content">
                       <div class="collapse-card__icon">
-                        <img src="img/document@2x.png" width="42" height="50" alt="">
+                        <img src="img/shop@2x.png" width="39" height="46" alt="">
                       </div>
 
-                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#permits">
-                        <h3>Разрешительная документация</h3>
+                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#shop">
+                        <h3>Гиппермаркеты</h3>
 
                         <img src="img/arrow-right.png" width="25" height="25" alt="">
                       </div>
                     </div>
                   </div>
 
-                  <div class="collapse-card__collapse" id="permits">
+                  <div class="collapse-card__collapse" id="shop">
                     <ul class="collapse-card__docs">
                       <li>
                         <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
@@ -465,107 +516,24 @@
               <div class="swiper-slide  infrastructure__slide">
                 <div class="collapse-card">
                   <div class="collapse-card__body">
-                    <div class="collapse-card__object" style="color: #0e8099;">
+                    <div class="collapse-card__object" style="color: #b51fc2;">
                       2 объекта
                     </div>
 
                     <div class="collapse-card__content">
                       <div class="collapse-card__icon">
-                        <img src="img/document@2x.png" width="42" height="50" alt="">
+                        <img src="img/cafe@2x.png" width="49" height="49" alt="">
                       </div>
 
-                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#permits">
-                        <h3>Разрешительная документация</h3>
+                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#cafe">
+                        <h3>Рестораны, кафе</h3>
 
                         <img src="img/arrow-right.png" width="25" height="25" alt="">
                       </div>
                     </div>
                   </div>
 
-                  <div class="collapse-card__collapse" id="permits">
-                    <ul class="collapse-card__docs">
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                      <li>
-                        <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
-
-                        <p>№ 23-3001000-36-2020 от 29.06.2019</p>
-
-                        <a href="#">Открыть документ</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide  infrastructure__slide">
-                <div class="collapse-card">
-                  <div class="collapse-card__body">
-                    <div class="collapse-card__object" style="color: #0e8099;">
-                      2 объекта
-                    </div>
-
-                    <div class="collapse-card__content">
-                      <div class="collapse-card__icon">
-                        <img src="img/document@2x.png" width="42" height="50" alt="">
-                      </div>
-
-                      <div class="collapse-card__title  js-collapse-card-toggle" data-target-card="#permits">
-                        <h3>Разрешительная документация</h3>
-
-                        <img src="img/arrow-right.png" width="25" height="25" alt="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="collapse-card__collapse" id="permits">
+                  <div class="collapse-card__collapse" id="cafe">
                     <ul class="collapse-card__docs">
                       <li>
                         <h4>Разрешение на ввод объекта в эксплуатацию.</h4>
@@ -889,6 +857,16 @@
 <section class="scene  main-form">
   <div class="grid">
     <div class="grid__wrap">
+      <div class="grid__list  main-form__header">
+        <div class="grid__item">
+          <h2>Подбор квартиры по параметрам</h2>
+        </div>
+
+        <div class="grid__item  main-form__button">
+          <button type="button" class="btn  btn--border">Смотреть все</button>
+        </div>
+      </div>
+
       <div class="grid__list">
         <div class="grid__item">
           <div class="main-form__body">
@@ -1090,7 +1068,7 @@
             </div>
 
             <div class="slider-3d__action">
-              <button type="button" class="btn  btn--white">3D-тур по квартире</button>
+              <button type="button" class="btn  btn--3d">3D-тур по квартире</button>
             </div>
 
             <div class="slider-3d__nav">
@@ -1763,7 +1741,7 @@
   </div>
 </section>
 
-<section class="scene  contacts">
+<section class="scene  contacts" id="map">
   <div class="grid">
     <div class="grid__wrap">
       <div class="grid__list  contacts__grid">
