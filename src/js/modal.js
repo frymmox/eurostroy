@@ -27,3 +27,33 @@ if (document.querySelector('.modal')) {
     }
   })
 }
+
+// Modal apartment
+if (document.querySelector('.modal')) {
+  const modalOpenApartment = document.querySelector('.js-modal-apartment-open')
+  const modalCloseApartment = document.querySelector('.js-modal-apartment-close')
+  const overlayApartment = document.querySelector('.js-modal-apartment .modal__overlay')
+  const modalApartment = document.querySelector('.js-modal-apartment')
+
+  modalOpenApartment.addEventListener('click', () => {
+    modalApartment.classList.add('modal--show')
+    scrollLock.disablePageScroll()
+  })
+
+  modalCloseApartment.addEventListener('click', () => {
+    modalApartment.classList.remove('modal--show')
+    scrollLock.enablePageScroll()
+  })
+
+  overlayApartment.addEventListener('click', () => {
+    modalApartment.classList.remove('modal--show')
+    scrollLock.enablePageScroll()
+  })
+
+  document.addEventListener('keydown', (e) => {
+    if (e.keyCode === 27) {
+      modalApartment.classList.remove('modal--show')
+      scrollLock.enablePageScroll()
+    }
+  })
+}

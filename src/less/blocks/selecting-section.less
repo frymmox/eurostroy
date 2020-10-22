@@ -1,0 +1,47 @@
+.selecting-section__header {
+  align-items: center;
+
+  .grid__item {
+    @media (min-width: @breakpoint-md) {
+      width: auto;
+
+      &:last-child {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.selecting-section__chessboard {
+  @media (min-width: @breakpoint-md) {
+    width: auto;
+  }
+}
+
+.selecting-section__layout {
+  @media (min-width: @breakpoint-md) {
+    width: auto;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    flex-grow: 1;
+    display: flex;
+  }
+}
+
+.selecting-section__content {
+  @media (min-width: @breakpoint-xl) {
+    margin: auto;
+  }
+}
+
+.selecting-section__image {
+  margin-bottom: 16px;
+}
+
+.selecting-section__desc {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: @link-color;
+}
