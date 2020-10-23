@@ -1,0 +1,175 @@
+.chosen-apartment {
+  @media (max-width: @breakpoint-lg - 1px) {
+    padding-top: 72px;
+  }
+}
+
+.chosen-apartment__header {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chosen-apartment__title {
+  @media (min-width: @breakpoint-lg) {
+    width: auto;
+  }
+}
+
+.chosen-apartment__back {
+  width: auto;
+
+  @media (max-width: @breakpoint-lg - 1px) {
+    position: absolute;
+    top: -48px;
+    right: 0;
+  }
+}
+
+.chosen-apartment__layout {
+  @media (min-width: @breakpoint-lg) {
+    width: 66.66%;
+  }
+}
+
+.chosen-apartment__content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @breakpoint-lg) {
+    width: 33.33%;
+  }
+}
+
+.chosen-apartment__tabs {
+  margin-bottom: 24px;
+}
+
+.chosen-apartment__image {
+  margin-bottom: 16px;
+
+  img {
+    margin-right: auto;
+    margin-left: auto;
+
+    &:last-child{
+      display: none;
+    }
+  }
+}
+
+.chosen-apartment__print {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #8797a2;
+
+  img {
+    margin-right: 8px;
+  }
+}
+
+.chosen-apartment__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-bottom: -16px;
+
+  li {
+    width: 33.33%;
+    border: 0 solid transparent;
+    border-right-width: 16px;
+    border-bottom-width: 16px;
+  }
+
+  span {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.chosen-apartment__cost {
+  margin-top: 24px;
+
+  span {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  p {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+  }
+}
+
+.chosen-apartment__features {
+  margin-top: 24px;
+  margin-bottom: -8;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &:nth-child(1) {
+      span {
+        background-color: #3fb2db;
+      }
+    }
+
+    &:nth-child(2) {
+      span {
+        background-color: #e31b6e;
+      }
+    }
+
+    &:nth-child(3) {
+      span {
+        background-color: #f78000;
+      }
+    }
+
+    &:nth-child(4) {
+      span {
+        background-color: #1cb100;
+      }
+    }
+  }
+
+  span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.chosen-apartment__button {
+  margin-top: auto;
+
+  @media (max-width: @breakpoint-lg - 1px) {
+    margin-top: 24px;
+  }
+
+  button {
+    width: 100%;
+    background-color: #8ec349;
+  }
+}

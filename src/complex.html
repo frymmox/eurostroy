@@ -914,7 +914,9 @@
       <div class="grid__list">
         <div class="grid__item">
           <button type="button" class="btn  js-modal-section-open">Купить квартиру</button>
-          <button type="button" class="btn  js-modal-apartment-open">Квартира</button>
+          <!-- <button type="button" class="btn  js-modal-apartment-open">Квартира</button> -->
+          <!-- <button type="button" class="btn  js-modal-apartment-form-open">Form</button> -->
+          <!-- <button type="button" class="btn  js-modal-request-submitted-open">Submitted</button> -->
         </div>
       </div>
     </div>
@@ -1757,7 +1759,7 @@
                       <li class="chessboard__item  chessboard__item--floor">20</li>
                       <li class="chessboard__item  chessboard__item--sold">1</li>
                       <li class="chessboard__item  chessboard__item--booked">1</li>
-                      <li class="chessboard__item  chessboard__item--active">2</li>
+                      <li class="chessboard__item">2</li>
                       <li class="chessboard__item">2</li>
                       <li class="chessboard__item">1</li>
                       <li class="chessboard__item">2</li>
@@ -2109,12 +2111,12 @@
         <div class="grid">
           <div class="grid__wrap">
             <div class="grid__list  chosen-apartment__header">
-              <div class="grid__item">
+              <div class="grid__item  chosen-apartment__title">
                 <h2>1-комнатная кв. №118</h2>
               </div>
 
               <div class="grid__item  chosen-apartment__back">
-                <div class="return-back">
+                <div class="return-back  js-modal-apartment-back">
                   <div class="return-back__icon">
                     <img src="img/return@2x.png" width="33" height="33" alt="">
                   </div>
@@ -2127,36 +2129,46 @@
             </div>
 
             <div class="grid__list">
-              <div class="grid__item">
-                <div class="tabs">
-                  <ul class="tabs__list">
-                    <li>
-                      <label>
-                        <input type="radio" name="view-apartment" value="apartment" checked>
-                        <span class="tabs__frame">Квартира</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="radio" name="view-apartment" value="show-floor">
-                        <span class="tabs__frame">Показать на этаже</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="radio" name="view-apartment" value="general-plan">
-                        <span class="tabs__frame">На генплане</span>
-                      </label>
-                    </li>
-                  </ul>
+              <div class="grid__item  chosen-apartment__layout">
+                <div class="chosen-apartment__tabs">
+                  <div class="tabs">
+                    <ul class="tabs__list">
+                      <li>
+                        <label class="js-view-apartment">
+                          <input type="radio" name="view-apartment" value="apartment" checked>
+                          <span class="tabs__frame">Квартира</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-view-floor">
+                          <input type="radio" name="view-apartment" value="show-floor">
+                          <span class="tabs__frame">Показать на этаже</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="view-apartment" value="general-plan">
+                          <span class="tabs__frame">На генплане</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
                 <div class="chosen-apartment__image">
                   <img src="img/apartment@2x.png" width="302" height="355" alt="">
+
+                  <img src="img/floor@2x.png" width="616" height="197" alt="">
+                </div>
+
+                <div class="chosen-apartment__print">
+                  <img src="img/printing@2x.png" width="36" height="34" alt="">
+
+                  <p>Распечатать</p>
                 </div>
               </div>
 
-              <div class="grid__item">
+              <div class="grid__item  chosen-apartment__content">
                 <ul class="chosen-apartment__info">
                   <li>
                     <span>Литер:</span>
@@ -2215,6 +2227,170 @@
                     <p>Дом сдан!</p>
                   </li>
                 </ul>
+
+                <div class="chosen-apartment__button">
+                  <button type="button" class="btn  js-modal-apartment-form-open">Забронировать квартиру</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="modal  js-modal-apartment-form">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+    <div class="modal__close">
+      <button class="js-modal-apartment-form-close" aria-label="Закрыть" type="button">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#cross-white"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__content">
+      <section class="scene  chosen-apartment-form">
+        <div class="grid">
+          <div class="grid__wrap">
+            <div class="grid__list  chosen-apartment-form__header">
+              <div class="grid__item  chosen-apartment-form__title">
+                <h2>Выбранная квартира</h2>
+              </div>
+
+              <div class="grid__item  chosen-apartment-form__back">
+                <div class="return-back  js-modal-apartment-form-back">
+                  <div class="return-back__icon">
+                    <img src="img/return@2x.png" width="33" height="33" alt="">
+                  </div>
+
+                  <div class="return-back__text">
+                    Вернуться назад
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid__list">
+              <div class="grid__item  chosen-apartment-form__layout">
+                <div class="chosen-apartment-form__image">
+                  <img src="img/apartment@2x.png" width="302" height="355" alt="">
+                </div>
+
+                <div class="chosen-apartment-form__info">
+                  <p>1-комнатная квартира</p>
+
+                  <ul>
+                    <li>36.5 м2</li>
+                    <li>|</li>
+                    <li>№118</li>
+                    <li>|</li>
+                    <li>2 900 210 руб.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="grid__item  chosen-apartment-form__content">
+                <div class="chosen-apartment-form__form">
+                  <h3>Заполните форму обратной связи.</h3>
+
+                  <div class="chosen-apartment-form__desc">
+                    <p>Наш специалист свяжется с Вами, чтобы обсудить способы покупки Вашей квартиры</p>
+                  </div>
+
+                  <form class="form">
+                    <div class="form__item">
+                      <div class="form__field">
+                        <div class="form__row">
+                          <div class="form__control">
+                            <input class="form__input" placeholder="Введите имя" required>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__item">
+                      <div class="form__field">
+                        <div class="form__row">
+                          <div class="form__control">
+                            <input class="form__input  input-phone" placeholder="Введите телефон" required>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__item">
+                      <div class="form__field">
+                        <div class="form__row">
+                          <div class="form__control">
+                            <textarea id="message" class="form__textarea" rows="5" placeholder="Комментарий"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__item">
+                      <div class="form__field">
+                        <div class="form__row">
+                          <div class="form__control">
+                            <button class="btn  js-modal-request-submitted-open" type="button">Забронировать квартиру</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__item">
+                      <div class="form__field">
+                        <div class="form__row">
+                          <div class="form__control">
+                            <p class="text-small">Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="modal  js-modal-request-submitted">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+    <div class="modal__close">
+      <button class="js-modal-request-submitted-close" aria-label="Закрыть" type="button">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#cross-white"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__content">
+      <section class="scene  request-submitted">
+        <div class="grid">
+          <div class="grid__wrap">
+            <div class="grid__list">
+              <div class="grid__item">
+                <div class="request-submitted__wrap">
+                  <div class="request-submitted__icon">
+                    <img src="img/success@2x.png" width="86" height="86" alt="">
+                  </div>
+
+                  <div class="request-submitted__text">
+                    <h2>Заявка отправлена</h2>
+
+                    <p>Наш специалист свяжется с Вами, чтобы обсудить способы покупки Вашей квартиры </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
