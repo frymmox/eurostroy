@@ -1,0 +1,209 @@
+@@include('inc/doc-start.html', {
+	"title": "Еврострой"
+})
+
+@@include('inc/page-header.html')
+
+<div class="breadcrumbs">
+	<div class="breadcrumbs__wrap">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item"><a href="#">ЖК «Черное море»</a></li>
+      <li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item"><a href="#">Коммерческие помещения</a></li>
+      <li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item  breadcrumbs__item--disabled"><a href="#">Ком. пом. №2</a></li>
+		</ul>
+	</div>
+</div>
+
+<section class="scene  chosen-apartment">
+  <div class="grid">
+    <div class="grid__wrap  chosen-apartment__body">
+      <div class="grid__list  chosen-apartment__header">
+        <div class="grid__item  chosen-apartment__title">
+          <h2>Ком. пом. №2</h2>
+        </div>
+
+        <div class="grid__item  chosen-apartment__back">
+          <div class="return-back">
+            <div class="return-back__icon">
+              <img src="img/return@2x.png" width="33" height="33" alt="">
+            </div>
+
+            <div class="return-back__text">
+              <a href="commercial-premises.html">Вернуться назад</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list">
+        <div class="grid__item  chosen-apartment__layout">
+          <div class="chosen-apartment__tabs">
+            <div class="tabs">
+              <ul class="tabs__list">
+                <li>
+                  <label class="js-view-apartment">
+                    <input type="radio" name="view-apartment" value="apartment" checked>
+                    <span class="tabs__frame">Квартира</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="js-view-floor">
+                    <input type="radio" name="view-apartment" value="show-floor">
+                    <span class="tabs__frame">Показать на этаже</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="view-apartment" value="general-plan">
+                    <span class="tabs__frame">На генплане</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="chosen-apartment__image">
+            <img src="img/apartment@2x.png" width="302" height="355" alt="">
+
+            <img src="img/floor@2x.png" width="616" height="197" alt="">
+          </div>
+
+          <div class="chosen-apartment__print">
+            <img src="img/printing@2x.png" width="36" height="34" alt="">
+
+            <p>Распечатать</p>
+          </div>
+        </div>
+
+        <div class="grid__item  chosen-apartment__content">
+          <ul class="chosen-apartment__info">
+            <li>
+              <span>Литер:</span>
+              <p>1</p>
+            </li>
+            <li>
+              <span>Секция:</span>
+              <p>1</p>
+            </li>
+            <li>
+              <span>Этаж:</span>
+              <p>11 из 15</p>
+            </li>
+            <li>
+              <span>Общая:</span>
+              <p>36,50м2</p>
+            </li>
+            <li>
+              <span>Жилая:</span>
+              <p>16,50м2</p>
+            </li>
+            <li>
+              <span>Кухня:</span>
+              <p>12,90м2</p>
+            </li>
+          </ul>
+
+          <div class="chosen-apartment__cost">
+            <span>Стоимость:</span>
+            <p>2 900 210 руб.</p>
+          </div>
+
+          <ul class="chosen-apartment__features">
+            <li>
+              <span>
+                <img src="img/discount.png" width="17" height="16" alt="">
+              </span>
+              <p>Ипотека от 4,2 %</p>
+            </li>
+            <li>
+              <span>
+                <img src="img/diagram.png" width="21" height="21" alt="">
+              </span>
+              <p>Индивидуальное газовое отопление</p>
+            </li>
+            <li>
+              <span>
+                <img src="img/speed.png" width="19" height="19" alt="">
+              </span>
+              <p>Стяжка пола в подарок</p>
+            </li>
+            <li>
+              <span>
+                <img src="img/correct.png" width="20" height="17" alt="">
+              </span>
+              <p>Дом сдан!</p>
+            </li>
+          </ul>
+
+          <div class="chosen-apartment__button">
+            <button type="button" class="btn">Забронировать квартиру</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  feedback">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item  feedback__item">
+          <div class="feedback__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+
+          <div class="feedback__text">
+            <p>Оставьте свой номер, мы свяжемся с вами и подробно на них ответим</p>
+          </div>
+
+          <div class="feedback__action">
+            <form class="form  feedback__form">
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input" placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input  input-phone" placeholder="Введите телефон" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  feedback__button" type="submit">Оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="feedback__desc">
+            <p>Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')

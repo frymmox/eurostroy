@@ -85,6 +85,11 @@
   }
 
   &--gradient {
+    background-color: rgba(78, 78, 78, 0);
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+    transition-property: background-color;
+
     &::after {
       content: '';
       position: absolute;
@@ -94,6 +99,10 @@
       bottom: 0;
       background-image: linear-gradient(to right,  rgba(245, 245, 245, 1) 60%, rgba(245, 245, 245, 0));
       z-index: -1;
+    }
+
+    &:hover {
+      background-color: rgba(78, 78, 78, 0.6);
     }
   }
 }
