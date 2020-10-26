@@ -1,13 +1,15 @@
 // Modal section
 if (document.querySelector('.modal')) {
-  const modalOpenSection = document.querySelector('.js-modal-section-open')
+  const modalOpenSectionArray = [...document.querySelectorAll('.js-modal-section-open')]
   const modalCloseSection = document.querySelector('.js-modal-section-close')
   const overlaySection = document.querySelector('.js-modal-section .modal__overlay')
   const modalSection = document.querySelector('.js-modal-section')
 
-  modalOpenSection.addEventListener('click', () => {
-    modalSection.classList.add('modal--show')
-    scrollLock.disablePageScroll()
+  modalOpenSectionArray.forEach((el) => {
+    el.addEventListener('click', () => {
+      modalSection.classList.add('modal--show')
+      scrollLock.disablePageScroll()
+    })
   })
 
   modalCloseSection.addEventListener('click', () => {
