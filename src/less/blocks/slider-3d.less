@@ -60,24 +60,11 @@
 
 .slider-3d__nav {
   position: relative;
-  line-height: 0;
   z-index: 1;
   display: flex;
   justify-content: center;
 
-  @media (max-width: @breakpoint-lg - 1px) {
-    margin-top: 32px;
-  }
-
-  .tabs__list {
-    @media (max-width: @breakpoint-lg - 1px) {
-      margin-bottom: -56px;
-    }
-  }
-
-  li {
-    @media (max-width: @breakpoint-lg - 1px) {
-      margin-bottom: 56px;
-    }
+  @media (min-width: @breakpoint-lg) {
+    margin-top: -25px;
   }
 }

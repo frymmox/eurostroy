@@ -1,0 +1,46 @@
+.explanation__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-bottom: -16px;
+
+  @media (min-width: @breakpoint-lg) {
+    justify-content: flex-end;
+  }
+}
+
+.explanation__item {
+  width: 100%;
+  border: 0 solid transparent;
+  border-right-width: 16px;
+  border-bottom-width: 16px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @breakpoint-md) {
+    width: auto;
+  }
+}
+
+.explanation__image {
+  width: 30px;
+  height: 20px;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  &--available {
+    border: 1px solid @body-color;
+  }
+
+  &--sold {
+    background-color: #dcdcdc;
+  }
+
+  &--booked {
+    border: 1px solid @body-color;
+    background-image: url('img/padlock@2x.png');
+    background-size: 11px 15px;
+    background-position: 9px 50%;
+    background-repeat: no-repeat;
+  }
+}
