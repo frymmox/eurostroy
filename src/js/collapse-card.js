@@ -5,6 +5,7 @@
         el.classList.toggle("collapse-card__title--show")
         const selector = el.getAttribute("data-target-card")
 
+        document.querySelector(".infrastructure__slider").classList.toggle("infrastructure__slider--active")
         document.querySelector(selector).classList.toggle("collapse-card__collapse--show")
       })
     })

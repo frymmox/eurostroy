@@ -141,6 +141,7 @@
             </div>
 
             <div class="complex-about__info">
+              <button type="button" class="btn  btn--green">Купить квартиру</button>
               <button type="button" class="btn  btn--border">Узнать больше о городе</button>
             </div>
           </div>
@@ -739,44 +740,6 @@
         <div class="grid__item">
           <div class="main-form__body">
             <form class="form  main-form__form">
-              <div class="form__item  form__item--cover">
-                <div class="form__label">
-                  <label for="city">Город</label>
-                </div>
-
-                <div class="form__field">
-                  <div class="form__row">
-                    <div class="form__control">
-                      <select id="city" class="form__select">
-                        <option value="1" selected>Анапа</option>
-                        <option value="2">Геленджик</option>
-                        <option value="3">Новороссийск</option>
-                        <option value="4">Сочи</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form__item  form__item--cover">
-                <div class="form__label">
-                  <label for="object">Все объекты</label>
-                </div>
-
-                <div class="form__field">
-                  <div class="form__row">
-                    <div class="form__control">
-                      <select id="object" class="form__select">
-                        <option value="1">Анапа</option>
-                        <option value="2">Геленджик</option>
-                        <option value="3">Новороссийск</option>
-                        <option value="4">Сочи</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <div class="form__item" style="width: auto;">
                 <div class="form__field">
                   <div class="form__row">
@@ -830,22 +793,6 @@
                 <div class="form-slider">
                   <div class="form-slider__main">
                     <div class="form-slider__item">
-                      <span class="form-slider__text">Цена от</span> <span class="js-lower-price"></span> <span>₽</span>
-                    </div>
-
-                    <div class="form-slider__item">
-                      <span class="form-slider__text">до</span> <span class="js-upper-price"></span> <span>₽</span>
-                    </div>
-                  </div>
-
-                  <div class="form-slider__slider  js-slider-price"></div>
-                </div>
-              </div>
-
-              <div class="form__item  form__item--large">
-                <div class="form-slider">
-                  <div class="form-slider__main">
-                    <div class="form-slider__item">
                       <span class="form-slider__text">Площадь от</span> <span class="js-lower-area"></span> <span>м<sup>2</sup></span>
                     </div>
 
@@ -855,6 +802,35 @@
                   </div>
 
                   <div class="form-slider__slider  js-slider-area"></div>
+                </div>
+              </div>
+
+              <div class="form__item" style="width: auto;">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <label class="form__checkbox">
+                        <input type="checkbox">
+                        <span>C ремонтом</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item  form__item--large">
+                <div class="form-slider">
+                  <div class="form-slider__main">
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">Цена от</span> <span class="js-lower-price"></span> <span>₽</span>
+                    </div>
+
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">до</span> <span class="js-upper-price"></span> <span>₽</span>
+                    </div>
+                  </div>
+
+                  <div class="form-slider__slider  js-slider-price"></div>
                 </div>
               </div>
 
@@ -878,20 +854,7 @@
                 </div>
               </div>
 
-              <div class="form__item">
-                <div class="form__field">
-                  <div class="form__row">
-                    <div class="form__control">
-                      <label class="form__checkbox">
-                        <input type="checkbox">
-                        <span>C ремонтом</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form__item">
+              <div class="form__item  form__item--large">
                 <div class="form__field">
                   <div class="form__row">
                     <div class="form__control">
@@ -914,9 +877,30 @@
       <div class="grid__list">
         <div class="grid__item">
           <button type="button" class="btn  js-modal-section-open">Купить квартиру</button>
-          <!-- <button type="button" class="btn  js-modal-apartment-open">Квартира</button> -->
-          <!-- <button type="button" class="btn  js-modal-apartment-form-open">Form</button> -->
-          <!-- <button type="button" class="btn  js-modal-request-submitted-open">Submitted</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  grid__list--two">
+        <div class="grid__item">
+          <div class="rooms-card">
+            <img src="img/rooms@2x.jpg" alt="">
+
+            <h3><a href="#">Коммерческие помещения</a></h3>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="rooms-card">
+            <img src="img/parking@2x.jpg" alt="">
+
+            <h3><a href="#">Парковочные места, кладовки</a></h3>
+          </div>
         </div>
       </div>
     </div>
@@ -935,19 +919,66 @@
       <div class="grid__list">
         <div class="grid__item">
           <div class="slider-3d">
-            <div class="swiper-container  slider-3d__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide  slider-3d__slide">
-                  <img src="img/tour.jpg" alt="">
+            <div class="slider-3d__accent">
+              <div class="swiper-container  slider-3d__slider" id="bathroom">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour-1.jpg" alt="">
+                  </div>
+
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour.jpg" alt="">
+                  </div>
                 </div>
 
-                <div class="swiper-slide  slider-3d__slide">
-                  <img src="img/tour.jpg" alt="">
-                </div>
+                <div class="swiper-button-prev  slider-3d__prev"> </div>
+                <div class="swiper-button-next  slider-3d__next"></div>
               </div>
 
-              <div class="swiper-button-prev  slider-3d__prev"> </div>
-              <div class="swiper-button-next  slider-3d__next"></div>
+              <div class="swiper-container  slider-3d__slider" id="hallway">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour.jpg" alt="">
+                  </div>
+
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour-1.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev  slider-3d__prev"> </div>
+                <div class="swiper-button-next  slider-3d__next"></div>
+              </div>
+
+              <div class="swiper-container  slider-3d__slider" id="bedroom">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour-1.jpg" alt="">
+                  </div>
+
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev  slider-3d__prev"> </div>
+                <div class="swiper-button-next  slider-3d__next"></div>
+              </div>
+
+              <div class="swiper-container  slider-3d__slider" id="room">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour.jpg" alt="">
+                  </div>
+
+                  <div class="swiper-slide  slider-3d__slide">
+                    <img src="img/tour.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev  slider-3d__prev"> </div>
+                <div class="swiper-button-next  slider-3d__next"></div>
+              </div>
             </div>
 
             <div class="slider-3d__action">
@@ -958,26 +989,26 @@
               <div class="tabs">
                 <ul class="tabs__list">
                   <li>
-                    <label>
-                      <input type="radio" name="object" value="mortgage" checked>
+                    <label class="js-view-place" data-target="#room">
+                      <input type="radio" name="place" value="room" checked>
                       <span class="tabs__frame">Гостиная</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="radio" name="object" value="maternity-capital">
+                    <label class="js-view-place" data-target="#bedroom">
+                      <input type="radio" name="place" value="bedroom">
                       <span class="tabs__frame">Спальня</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="radio" name="object" value="installment">
+                    <label class="js-view-place" data-target="#hallway">
+                      <input type="radio" name="place" value="hallway">
                       <span class="tabs__frame">Прихожая</span>
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="radio" name="object" value="military-mortgage">
+                    <label class="js-view-place" data-target="#bathroom">
+                      <input type="radio" name="place" value="bathroom">
                       <span class="tabs__frame">Ванная комната</span>
                     </label>
                   </li>
@@ -1109,6 +1140,67 @@
 
             <div class="swiper-button-prev  construction-progress__prev"></div>
             <div class="swiper-button-next  construction-progress__next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  video">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <h2>Видео</h2>
+
+          <div class="swiper-container  video__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                  <div class="video-card">
+                    <img class="video-card__media" src="img/video-1@2x.jpg" alt="">
+
+                    <img class="video-card__play" src="img/play-button.png" width="66" height="66" alt="">
+
+                    <div class="video-card__title">
+                      Отчетный ролик ТЦ «Черноморский» сентябрь 2020
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                  <div class="video-card">
+                    <img class="video-card__media" src="img/video-2@2x.jpg" alt="">
+
+                    <img class="video-card__play" src="img/play-button.png" width="66" height="66" alt="">
+
+                    <div class="video-card__title">
+                      Ход строительства ЖК «Черное море» август 2020
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                  <div class="video-card">
+                    <img class="video-card__media" src="img/video-1@2x.jpg" alt="">
+
+                    <img class="video-card__play" src="img/play-button.png" width="66" height="66" alt="">
+
+                    <div class="video-card__title">
+                      Отчетный ролик ТЦ «Черноморский» сентябрь 2020
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev  video__prev"></div>
+            <div class="swiper-button-next  video__next"></div>
           </div>
         </div>
       </div>
@@ -1384,7 +1476,7 @@
     <div class="grid__wrap">
       <div class="grid__list  payment-method__header">
         <div class="grid__item  payment-method__title">
-          <h2>Способы оплаты</h2>
+          <h2>Способы покупки</h2>
         </div>
 
         <div class="grid__item  payment-method__nav">
@@ -1472,6 +1564,93 @@
 
             <div class="swiper-button-prev  payment-promo__prev"> </div>
             <div class="swiper-button-next  payment-promo__next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  infrastructure">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  grid__list--two">
+        <div class="grid__item">
+          <div class="infrastructure__title">
+            <h2>Способы оформления</h2>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="infrastructure__text">
+            <p>Жилой комплекс расположен в современном районе города с инфраструктурой и развитой транспортной сетью. У жителей есть возможность быстро добраться на пляж.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list  infrastructure__main">
+        <div class="grid__item">
+          <div class="swiper-container  infrastructure__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide  infrastructure__slide">
+                <a href="#">
+                  <div class="collapse-card">
+                    <div class="collapse-card__body">
+                      <div class="collapse-card__content">
+                        <div class="collapse-card__icon">
+                          <img src="img/operator@2x.png" width="38" height="50" alt="">
+                        </div>
+
+                        <div class="collapse-card__title">
+                          <h3>Процесс дистанционной покупки квартиры</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide  infrastructure__slide">
+                <a href="#">
+                  <div class="collapse-card">
+                    <div class="collapse-card__body">
+
+                      <div class="collapse-card__content">
+                        <div class="collapse-card__icon">
+                          <img src="img/writing@2x.png" width="49" height="49" alt="">
+                        </div>
+
+                        <div class="collapse-card__title">
+                          <h3>Какие документы нужны для оформления</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide  infrastructure__slide">
+                <a href="#">
+                  <div class="collapse-card">
+                    <div class="collapse-card__body">
+
+                      <div class="collapse-card__content">
+                        <div class="collapse-card__icon">
+                          <img src="img/location@2x.png" width="42" height="47" alt="">
+                        </div>
+
+                        <div class="collapse-card__title">
+                          <h3>Удаленное оформление сделки через нотариуса</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev  infrastructure__prev"></div>
+            <div class="swiper-button-next  infrastructure__next"></div>
           </div>
         </div>
       </div>
