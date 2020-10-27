@@ -1,5 +1,5 @@
-// Modal section
-if (document.querySelector('.modal')) {
+if (document.querySelector('.js-modal')) {
+  // Modal section
   const modalOpenSectionArray = [...document.querySelectorAll('.js-modal-section-open')]
   const modalCloseSection = document.querySelector('.js-modal-section-close')
   const overlaySection = document.querySelector('.js-modal-section .modal__overlay')
@@ -125,5 +125,46 @@ if (document.querySelector('.modal')) {
       modalRequestSubmitted.classList.remove('modal--show')
       scrollLock.enablePageScroll()
     }
+  })
+}
+
+// Modal full
+if (document.querySelector('.js-modal-full')) {
+  const modalOpenFullArray = [...document.querySelectorAll('.js-modal-full-open')]
+  const modalCloseFullArray = [...document.querySelectorAll('.js-modal-full-close')]
+  const modalOpenFullNextArray = [...document.querySelectorAll('.js-modal-full-open-next')]
+
+  modalOpenFullArray.forEach((el) => {
+    el.addEventListener('click', () => {
+      const selector = el.getAttribute("data-target")
+
+      document.querySelector(selector).classList.add('modal--active')
+      scrollLock.disablePageScroll()
+    })
+  })
+
+  modalOpenFullNextArray.forEach((el) => {
+    el.addEventListener('click', () => {
+      const selector = el.getAttribute("data-target")
+
+      document.querySelectorAll(".js-modal-full").forEach((el) => {
+        el.classList.remove('modal--active')
+      })
+
+      setTimeout(() => {
+        document.querySelector(selector).classList.add('modal--active')
+      }, 350)
+
+    })
+  })
+
+  modalCloseFullArray.forEach((el) => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll(".js-modal-full").forEach((el) => {
+        el.classList.remove('modal--active')
+      })
+
+      scrollLock.enablePageScroll()
+    })
   })
 }

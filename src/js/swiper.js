@@ -136,3 +136,10 @@ const swiperInfrastructure = new Swiper('.infrastructure__slider', {
     prevEl: '.infrastructure__prev',
   },
 })
+
+const swiperFeatureContent = new Swiper('.feature-content__slider', {
+  navigation: {
+    nextEl: '.feature-content__next',
+    prevEl: '.feature-content__prev',
+  },
+})
