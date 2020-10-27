@@ -1,0 +1,261 @@
+@@include('inc/doc-start.html', {
+	"title": "Еврострой"
+})
+
+@@include('inc/page-header.html', {
+  variant: 'header--complex'
+})
+
+<div class="breadcrumbs">
+	<div class="breadcrumbs__wrap">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item"><a href="#">Выбрать квартиру </a></li>
+      <li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item  breadcrumbs__item--disabled"><a href="#">Анапа</a></li>
+		</ul>
+	</div>
+</div>
+
+<section class="scene  main-form">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <h2>Выбрать квартиру</h2>
+        </div>
+      </div>
+
+      <div class="grid__list">
+        <div class="grid__item">
+          <div class="main-form__body">
+            <form class="form  main-form__form">
+              <div class="form__item  form__item--cover">
+                <div class="form__label">
+                  <label for="city">Город</label>
+                </div>
+
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <select id="city" class="form__select">
+                        <option value="1" selected>Анапа</option>
+                        <option value="2">Геленджик</option>
+                        <option value="3">Новороссийск</option>
+                        <option value="4">Сочи</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item  form__item--cover">
+                <div class="form__label">
+                  <label for="object">Все объекты</label>
+                </div>
+
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <select id="object" class="form__select">
+                        <option value="1">Анапа</option>
+                        <option value="2">Геленджик</option>
+                        <option value="3">Новороссийск</option>
+                        <option value="4">Сочи</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item" style="width: auto;">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms" checked>
+                        <span>S</span>
+                      </label>
+                    </div>
+
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms">
+                        <span>1k</span>
+                      </label>
+                    </div>
+
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms">
+                        <span>2k</span>
+                      </label>
+                    </div>
+
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="rooms">
+                        <span>3k</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="input-floor">
+                  <div class="input-floor__item">
+                    <span class="input-floor__text">Этаж</span>
+                    <span class="input-floor__pretext">от</span>
+                    <input class="form__input" placeholder="1">
+                  </div>
+
+                  <div class="input-floor__item">
+                    <span class="input-floor__pretext">до</span>
+                    <input class="form__input" placeholder="20">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item  form__item--large">
+                <div class="form-slider">
+                  <div class="form-slider__main">
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">Цена от</span> <span class="js-lower-price"></span> <span>₽</span>
+                    </div>
+
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">до</span> <span class="js-upper-price"></span> <span>₽</span>
+                    </div>
+                  </div>
+
+                  <div class="form-slider__slider  js-slider-price"></div>
+                </div>
+              </div>
+
+              <div class="form__item  form__item--large">
+                <div class="form-slider">
+                  <div class="form-slider__main">
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">Площадь от</span> <span class="js-lower-area"></span> <span>м<sup>2</sup></span>
+                    </div>
+
+                    <div class="form-slider__item">
+                      <span class="form-slider__text">до</span> <span class="js-upper-area"></span> <span>м<sup>2</sup></span>
+                    </div>
+                  </div>
+
+                  <div class="form-slider__slider  js-slider-area"></div>
+                </div>
+              </div>
+
+              <div class="form__item" style="width: auto;">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="type" checked>
+                        <span>От застройщика</span>
+                      </label>
+                    </div>
+
+                    <div class="form__control" style="flex-grow: 0;">
+                      <label class="main-form__radio">
+                        <input type="radio" name="type">
+                        <span>Переуступка</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <label class="form__checkbox">
+                        <input type="checkbox">
+                        <span>C ремонтом</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  main-form__submit" type="submit">Показать варианты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  feedback">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item  feedback__item">
+          <div class="feedback__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+
+          <div class="feedback__text">
+            <p>Оставьте свой номер, мы свяжемся с вами и подробно на них ответим</p>
+          </div>
+
+          <div class="feedback__action">
+            <form class="form  feedback__form">
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input" placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input  input-phone" placeholder="Введите телефон" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  feedback__button" type="submit">Оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="feedback__desc">
+            <p>Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')
