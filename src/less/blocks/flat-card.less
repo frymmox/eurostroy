@@ -1,0 +1,148 @@
+.flat-card {
+  display: flex;
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: @border-radius;
+  box-shadow: 0px 1px 7px 0px rgba(8, 23, 23, 0.09);
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    flex-direction: column;
+  }
+}
+
+.flat-card__icons {
+  display: flex;
+  position: absolute;
+  top: -15px;
+  right: calc(50% - 60px);
+  z-index: 2;
+
+  @media (min-width: @breakpoint-xl) {
+    right: calc(25% - 60px);
+  }
+
+  li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(1) {
+      background-color: #3fb2db;
+    }
+
+    &:nth-child(2) {
+      background-color: #e31b6e;
+    }
+
+    &:nth-child(3) {
+      background-color: #f78000;
+    }
+
+    &:nth-child(4) {
+      background-color: #1cb100;
+    }
+  }
+}
+
+.flat-card__accent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #a9a9a9;
+
+  @media (max-width: @breakpoint-xl - 1px) {
+    padding: 24px;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    width: 50%;
+    border-bottom: none;
+    border-right: 2px solid #a9a9a9;
+  }
+}
+
+.flat-card__content {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+
+  @media (min-width: @breakpoint-xl) {
+    width: 50%;
+  }
+}
+
+.flat-card__header {
+  margin-bottom: 24px;
+
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #0f2f45;
+    text-transform: uppercase;
+  }
+}
+
+.flat-card__main {
+  margin-bottom: 16px;
+
+  h3 {
+    color: #0f2f45;
+  }
+}
+
+.flat-card__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-bottom: -16px;
+
+  li {
+    width: 33.33%;
+    border: 0 solid transparent;
+    border-right-width: 16px;
+    border-bottom-width: 16px;
+  }
+
+  span {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.flat-card__cost {
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  span {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  p {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    color: #0f2f45;
+  }
+}
+
+.flat-card__action {
+  a {
+    width: 100%;
+    font-weight: 600;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

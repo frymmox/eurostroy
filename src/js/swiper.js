@@ -143,3 +143,10 @@ const swiperFeatureContent = new Swiper('.feature-content__slider', {
     prevEl: '.feature-content__prev',
   },
 })
+
+const swiperCityContent = new Swiper('.city-content__slider', {
+  navigation: {
+    nextEl: '.city-content__next',
+    prevEl: '.city-content__prev',
+  },
+})

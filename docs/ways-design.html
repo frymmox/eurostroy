@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Еврострой</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="libs.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32"> -->
+  </head>
+  <body>
+    <div class="page">
+
+
+<header class="header  @@variant">
+  <div class="header__wrap">
+    <div class="header__list">
+      <div class="header__fold">
+        <ul class="header__menu  header__menu--fold">
+          <li class="header__logo">
+            <a href="index.html">
+              <img src="img/logo.png" width="132" height="65" alt="">
+            </a>
+          </li>
+
+          <li class="header__logo  header__logo--complex">
+            <img src="img/logo-complex.png" width="193" height="57" alt="">
+          </li>
+
+          <li class="header__phone">
+            <div class="phone">
+              <div class="phone__image">
+                <a href="tel:+78002502031">
+                  <img src="img/phone.png" width="27" height="27" alt="">
+                </a>
+              </div>
+
+              <div class="phone__text">
+                <p class="phone__desc">*Бесплатный звонок по РФ</p>
+                <p class="phone__number"><a href="tel:+78002502031">8 800 250 20 31</a></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="header__callback">
+            <button type="button" class="btn  btn--border">Обратный звонок</button>
+          </li>
+
+          <li class="header__toggle">
+            <button class="header__open" type="button">
+              <svg width="32" height="32">
+                <use href="img/sprite.svg#menu"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__collapse">
+        <button class="header__close" type="button">
+          <svg width="32" height="32">
+            <use href="img/sprite.svg#cross"></use>
+          </svg>
+        </button>
+
+        <nav class="header__nav">
+          <ul class="header__menu  header__menu--collapse">
+            <li class="header__link"><a href="#">О компании</a></li>
+
+            <li class="header__link">
+              <span class="js-collapse-toggle" data-target="#menu-object">
+                Объекты в продаже
+
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-object" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link">
+              <span href="#" class="js-collapse-toggle" data-target="#menu-project">
+                Строящиеся проекты
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-project" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link">
+              <span href="#" class="js-collapse-toggle" data-target="#menu-office">
+                Офисы продаж
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-office" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+
+<div class="breadcrumbs">
+	<div class="breadcrumbs__wrap">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item"><a href="#">ЖК «Черное море»</a></li>
+      <li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item  breadcrumbs__item--disabled"><a href="#">Способы оформления</a></li>
+		</ul>
+	</div>
+</div>
+
+<section class="scene">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <h1>Способы оформления</h1>
+        </div>
+      </div>
+
+      <div class="grid__list">
+        <div class="grid__item">
+          <div class="tabs-link">
+            <ul class="tabs-link__list">
+              <li>
+                <a class="tabs-link__target  tabs-link__target--active" href="#remote-purchase">Дистанционная покупка</a>
+              </li>
+              <li>
+                <a class="tabs-link__target" href="#docs">Какие нужны документы?</a>
+              </li>
+              <li>
+                <a class="tabs-link__target" href="#remote-design">Удаленное оформление через натариуса</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="remote-purchase">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  grid__list--average">
+        <div class="grid__item">
+          <div class="wysiwyg">
+            <h2 class="small-title">Процесс дистанционной покупки квартиры</h2>
+
+            <p>Курортную Анапу окружают многочисленные плантации винограда. Различные его сорта применяют не только в пищевых, но и лечебных целях. Анапские вина считаются одними из лучших на мировом рынке. Растительный и животный мир чрезвычайно разнообразен. В лесах произрастают: дуб, бук, ясень, сосна и др. Из кустарниковых пород распространены: скумпия, кизил, держидерево и др. В лесах обитают: енотовидная собака, лесной кот, барсук, олень, белка, заяц-русак и многие другие. Район – место обитания около 300 видов птиц. Разнообразна флора и фауна Черного моря.</p>
+
+            <p>Теплое море, солнце, которое ласково греет и не сжигает, целебный морской воздух, поражающие своей красотой места, романтические ночи и дивные анапские вина, не только кружащие голову, но помогающие поправить здоровье… этот завораживающий калейдоскоп впечатлений надолго сохранится в вашей памяти и вас непрестанно будет снова тянуть в эти места.</p>
+
+            <ul>
+              <li>ценнейшие лечебные сероводородные грязи,</li>
+              <li>сопочные грязи Таманских вулканов,</li>
+              <li>четыре типа целебных минеральных источников, воды которых пьют как в лечебных целях, так и в качестве столовой,</li>
+              <li>сероводородные, йодные, бромные высокоминерализованные воды и рассолы для ванн,</li>
+              <li>лечебный предгорно-степной климат средиземноморского типа,</li>
+            </ul>
+
+            <p>
+              <div class="faq">
+                <div class="faq__list">
+                  <div class="faq__item">
+                    <ul class="faq__question">
+                      <li>
+                        <label class="js-faq" data-target="#question-1">
+                          <input type="radio" name="question-1" value="var1" checked>
+                          <span class="faq__frame">
+                            1) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-2">
+                          <input type="radio" name="question-1" value="var2">
+                          <span class="faq__frame">
+                            2) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-3">
+                          <input type="radio" name="question-1" value="var3">
+                          <span class="faq__frame">
+                            3) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-4">
+                          <input type="radio" name="question-1" value="var4">
+                          <span class="faq__frame">
+                            4) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="faq__item">
+                    <div class="faq__content">
+                      <div class="faq__answer  faq__answer--active" id="question-1">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 1</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-2">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 2</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-3">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 3</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-4">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="docs">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  grid__list--average">
+        <div class="grid__item">
+          <div class="wysiwyg">
+            <h2 class="small-title">Какие документы нужны для оформления?</h2>
+
+            <p>Анапа – самый крупный в России семейный и детский курорт. Это 40 км лучших в Европе песчаных пляжей, ширина которых достигает местами 600 метров, и 10 километров галечных. Она расположен в юго-западной части Краснодарского края, на берегу Черного моря, на стыке равнинного Таманского полуострова и гористого, покрытого лесами полуострова Абрау. Этим прежде всего и объясняется удивительное разнообразие ландшафта на территории курорта: от типично кавказских предгорий, покрытых смешанным лесом, до равнинного плато, на котором стоял древний античный город Горгиппия, и низменных равнин Тамани, перемежающихся морскими лиманами. общая протяженность курорта составляет почти 80 километров. Функционируют 200 санаториев для родителей с детьми, семейных пансионатов, детских санаториев, оздоровительных лагерей и баз отдыха. В летний сезон они способны принять до 50 тысяч отдыхающих. 27 здравниц на 14 тысяч мест эффективно работают круглый год. Если раньше Анапа традиционно считалась детским курортом, то в настоящее время курорт переориентируется на более перспективное направление – семейный отдых. Доктор Будзинский, практиковавший здесь до революции и основавший 100 лет назад первую здравницу, отмечал что в Анапе уникальный по своим целебным свойствам климат. Со времен древнегреческой Горгиппии в этом регионе не было эпидемий чумы, холеры, оспы.</p>
+
+            <p>
+              <div class="faq">
+                <div class="faq__list">
+                  <div class="faq__item">
+                    <ul class="faq__question">
+                      <li>
+                        <label class="js-faq" data-target="#question-5">
+                          <input type="radio" name="question-2" value="var1" checked>
+                          <span class="faq__frame">
+                            1) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-6">
+                          <input type="radio" name="question-2" value="var2">
+                          <span class="faq__frame">
+                            2) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-7">
+                          <input type="radio" name="question-2" value="var3">
+                          <span class="faq__frame">
+                            3) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-8">
+                          <input type="radio" name="question-2" value="var4">
+                          <span class="faq__frame">
+                            4) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="faq__item">
+                    <div class="faq__content">
+                      <div class="faq__answer  faq__answer--active" id="question-5">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 1</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-6">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 2</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-7">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 3</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-8">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="remote-design">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  grid__list--average">
+        <div class="grid__item">
+          <div class="wysiwyg">
+            <h2 class="small-title">Удаленное оформление сделки через натариуса</h2>
+
+            <p>Курортную Анапу окружают многочисленные плантации винограда. Различные его сорта применяют не только в пищевых, но и лечебных целях. Анапские вина считаются одними из лучших на мировом рынке. Растительный и животный мир чрезвычайно разнообразен. В лесах произрастают: дуб, бук, ясень, сосна и др. Из кустарниковых пород распространены: скумпия, кизил, держидерево и др. В лесах обитают: енотовидная собака, лесной кот, барсук, олень, белка, заяц-русак и многие другие. Район – место обитания около 300 видов птиц. Разнообразна флора и фауна Черного моря.</p>
+
+            <p>Теплое море, солнце, которое ласково греет и не сжигает, целебный морской воздух, поражающие своей красотой места, романтические ночи и дивные анапские вина, не только кружащие голову, но помогающие поправить здоровье… этот завораживающий калейдоскоп впечатлений надолго сохранится в вашей памяти и вас непрестанно будет снова тянуть в эти места.</p>
+
+            <ul>
+              <li>ценнейшие лечебные сероводородные грязи,</li>
+              <li>сопочные грязи Таманских вулканов,</li>
+              <li>четыре типа целебных минеральных источников, воды которых пьют как в лечебных целях, так и в качестве столовой,</li>
+              <li>сероводородные, йодные, бромные высокоминерализованные воды и рассолы для ванн,</li>
+              <li>лечебный предгорно-степной климат средиземноморского типа,</li>
+            </ul>
+
+            <p>
+              <div class="faq">
+                <div class="faq__list">
+                  <div class="faq__item">
+                    <ul class="faq__question">
+                      <li>
+                        <label class="js-faq" data-target="#question-9">
+                          <input type="radio" name="question-3" value="var1" checked>
+                          <span class="faq__frame">
+                            1) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-10">
+                          <input type="radio" name="question-3" value="var2">
+                          <span class="faq__frame">
+                            2) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-11">
+                          <input type="radio" name="question-3" value="var3">
+                          <span class="faq__frame">
+                            3) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="js-faq" data-target="#question-12">
+                          <input type="radio" name="question-3" value="var4">
+                          <span class="faq__frame">
+                            4) Здесь будет написан часто задаваемый вопрос?
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="faq__item">
+                    <div class="faq__content">
+                      <div class="faq__answer  faq__answer--active" id="question-9">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 1</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-10">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 2</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-11">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 3</p>
+                      </div>
+
+                      <div class="faq__answer" id="question-12">
+                        <p>Здесь будет ответ на вопрос, который будет содержать подробный ответ. Также данные вопросы мы будем делать, чтобы менеджеры могли использовать их как шпаргалки</p>
+
+                        <p>вопрос 4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  feedback">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item  feedback__item">
+          <div class="feedback__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+
+          <div class="feedback__text">
+            <p>Оставьте свой номер, мы свяжемся с вами и подробно на них ответим</p>
+          </div>
+
+          <div class="feedback__action">
+            <form class="form  feedback__form">
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input" placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input  input-phone" placeholder="Введите телефон" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  feedback__button" type="submit">Оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="feedback__desc">
+            <p>Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__wrap">
+    <div class="footer__list  footer__list--top">
+      <div class="footer__item">
+        <div class="footer__logo">
+          <a href="index.html"><img src="img/logo.png" width="176" height="86" alt=""></a>
+        </div>
+
+        <div class="footer__call">
+          <a href="tel:+78002502031">8 800 250 20 31</a>
+          <p>Обратный звонок</p>
+        </div>
+
+        <div class="footer__social">
+          <div class="social">
+            <div class="social__item">
+              <a href="#"><img src="img/instagram.png" width="28" height="29" alt=""></a>
+            </div>
+
+            <div class="social__item">
+              <a href="#"><img src="img/vk.png" width="28" height="29" alt=""></a>
+            </div>
+
+            <div class="social__item">
+              <a href="#"><img src="img/youtube.png" width="28" height="29" alt=""></a>
+            </div>
+
+            <div class="social__item">
+              <a href="#"><img src="img/facebook.png" width="28" height="29" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">История</a>
+          </li>
+          <li>
+            <a href="#">Реквизиты</a>
+          </li>
+          <li>
+            <a href="#">Вакансии</a>
+          </li>
+          <li>
+            <a href="#">Офисы продаж</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Проекты</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Черноморский 2»</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Черное море»</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Аврора»</a>
+          </li>
+          <li>
+            <a href="#">ТЦ «Черноморский»</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Жемчужный»</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Способы покупки</a>
+          </li>
+          <li>
+            <a href="#">Ипотека</a>
+          </li>
+          <li>
+            <a href="#">Мат. капитал</a>
+          </li>
+          <li>
+            <a href="#">Военная ипотека</a>
+          </li>
+          <li>
+            <a href="#">Рассрочка</a>
+          </li>
+          <li>
+            <a href="#">Семейная ипотека</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Строим в городах</a>
+          </li>
+          <li>
+            <a href="#">г. Геленджик</a>
+          </li>
+          <li>
+            <a href="#">г. Анапа</a>
+          </li>
+          <li>
+            <a href="#">г. Новороссийск</a>
+          </li>
+          <li>
+            <a href="#">г. Сочи</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__list  footer__list--bottom">
+      <div class="footer__item  footer__desc">
+        <p>Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ.</p>
+      </div>
+
+      <div class="footer__item">
+        <p>Все права защищены  ИСК«Еврострой»</p>
+      </div>
+
+      <div class="footer__item">
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="libs.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+

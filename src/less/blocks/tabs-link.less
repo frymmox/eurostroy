@@ -1,0 +1,39 @@
+.tabs-link__target {
+  padding: 16px 20px;
+  background-color: #eeeeee;
+  display: block;
+
+  &--active {
+    color: #fff;
+    background-color: #0566aa;
+  }
+}
+
+.tabs-link__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: @breakpoint-md - 1px) {
+    flex-direction: column;
+  }
+
+  li {
+    @media (max-width: @breakpoint-md - 1px) {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &:first-child {
+      a {
+        border-radius: 5px 0 0 5px;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+}
