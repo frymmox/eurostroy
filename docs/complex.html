@@ -1349,7 +1349,7 @@
             </div>
 
             <div class="slider-3d__action">
-              <button type="button" class="btn  btn--3d">3D-тур по квартире</button>
+              <button type="button" class="btn  btn--3d  js-modal-tour-open">3D-тур по квартире</button>
             </div>
 
             <div class="slider-3d__nav">
@@ -1411,7 +1411,7 @@
               </div>
 
               <div class="panorama__action">
-                <button class="btn  btn--white" type="button">Смотреть панораму</button>
+                <button class="btn  btn--white  js-modal-panorama-open" type="button">Смотреть панораму</button>
               </div>
             </div>
           </div>
@@ -1847,39 +1847,15 @@
         </div>
 
         <div class="grid__item  payment-method__nav">
-          <div class="tabs">
-            <ul class="tabs__list">
-              <li>
-                <label>
-                  <input type="radio" name="payment" value="mortgage" checked>
-                  <span class="tabs__frame">Ипотека</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="payment" value="maternity-capital">
-                  <span class="tabs__frame">Материнский капитал</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="payment" value="installment">
-                  <span class="tabs__frame">Рассрочка без %</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="payment" value="military-mortgage">
-                  <span class="tabs__frame">Военная ипотека</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" name="payment" value="full-payment">
-                  <span class="tabs__frame">100% оплата</span>
-                </label>
-              </li>
-            </ul>
+
+          <div class="swiper-container tabs-buttons">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide tabs-buttons__slide">Ипотека</div>
+              <div class="swiper-slide tabs-buttons__slide">Материнский капитал</div>
+              <div class="swiper-slide tabs-buttons__slide">Рассрочка без %</div>
+              <div class="swiper-slide tabs-buttons__slide">Военная ипотека</div>
+              <div class="swiper-slide tabs-buttons__slide">100% оплата</div>
+            </div>
           </div>
         </div>
       </div>
@@ -1912,7 +1888,67 @@
                 <div class="payment-promo__wrapper">
                   <div class="payment-promo__content">
                     <div class="payment-promo__title">
-                      <h3>Ипотека</h3>
+                      <h3>Материнский капитал</h3>
+                    </div>
+
+                    <div class="payment-promo__text">
+                      <p>Банки-партнеры оформляют ипотеку от 6% годовых, первоначальным взносом от 20% и сроком кредитования до 30 лет.</p>
+                    </div>
+                  </div>
+
+                  <div class="payment-promo__action">
+                    <button type="button" class="btn  btn--white">Узнать подробнее</button>
+                  </div>
+                </div>
+
+                <img class="payment-promo__image" src="img/group-image@2x.png" alt="">
+              </div>
+
+              <div class="swiper-slide  payment-promo__slide" style="background-color: #86b850;">
+                <div class="payment-promo__wrapper">
+                  <div class="payment-promo__content">
+                    <div class="payment-promo__title">
+                      <h3>Рассрочка без %</h3>
+                    </div>
+
+                    <div class="payment-promo__text">
+                      <p>Банки-партнеры оформляют ипотеку от 6% годовых, первоначальным взносом от 20% и сроком кредитования до 30 лет.</p>
+                    </div>
+                  </div>
+
+                  <div class="payment-promo__action">
+                    <button type="button" class="btn  btn--white">Узнать подробнее</button>
+                  </div>
+                </div>
+
+                <img class="payment-promo__image" src="img/group-image@2x.png" alt="">
+              </div>
+
+              <div class="swiper-slide  payment-promo__slide" style="background-color: #e30050;">
+                <div class="payment-promo__wrapper">
+                  <div class="payment-promo__content">
+                    <div class="payment-promo__title">
+                      <h3>Военная ипотека</h3>
+                    </div>
+
+                    <div class="payment-promo__text">
+                      <p>Банки-партнеры оформляют ипотеку от 6% годовых, первоначальным взносом от 20% и сроком кредитования до 30 лет.</p>
+                    </div>
+                  </div>
+
+                  <div class="payment-promo__action">
+                    <button type="button" class="btn  btn--white">Узнать подробнее</button>
+                  </div>
+                </div>
+
+                <img class="payment-promo__image" src="img/group-image@2x.png" alt="">
+              </div>
+
+              <div class="swiper-slide  payment-promo__slide" style="background-color: #86b850;">
+                <div class="payment-promo__wrapper">
+                  <div class="payment-promo__content">
+                    <div class="payment-promo__title">
+                      <h3>100% оплата</h3>
                     </div>
 
                     <div class="payment-promo__text">
@@ -3552,6 +3588,62 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="modal  js-modal-tour  modal--full">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+    <div class="modal__close">
+      <button class="js-modal-tour-close" aria-label="Закрыть" type="button">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#cross-grey"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__content">
+      <section class="scene">
+        <div class="grid">
+          <div class="grid__wrap">
+            <div class="grid__list">
+              <div class="grid__item">
+                <img src="img/tour-1.jpg" width="1360" height="870" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="modal  js-modal-panorama  modal--full">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+    <div class="modal__close">
+      <button class="js-modal-panorama-close" aria-label="Закрыть" type="button">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#cross-grey"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__content">
+      <section class="scene">
+        <div class="grid">
+          <div class="grid__wrap">
+            <div class="grid__list">
+              <div class="grid__item">
+                <img src="img/tour-1.jpg" width="1360" height="870" alt="">
               </div>
             </div>
           </div>

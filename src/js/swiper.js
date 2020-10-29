@@ -104,11 +104,24 @@ const swiperComplexAbout = new Swiper('.complex-about-media__slider', {
   },
 })
 
+const swiperTabs = new Swiper('.tabs-buttons', {
+  slidesPerView: 'auto',
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  shortSwipes: false,
+  longSwipes: false,
+});
+
 const swiperPaymentPromo = new Swiper('.payment-promo__slider', {
   navigation: {
     nextEl: '.payment-promo__next',
     prevEl: '.payment-promo__prev',
   },
+  thumbs: {
+    swiper: swiperTabs
+  },
+  autoHeight: true,
 })
 
 const swiperVirtualTour = new Swiper('.slider-3d__slider', {
