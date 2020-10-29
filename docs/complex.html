@@ -292,13 +292,71 @@
             <h2>Инфраструктура района. Все лучшее рядом!</h2>
           </div>
           <div class="infrastructure__button">
-            <a href="#map" type="button" class="btn  btn--map">Показать на карте</a>
+            <button type="button" class="btn  btn--map  js-view-map">
+              <span>Показать на карте</span>
+              <span>Скрыть карту</span>
+            </button>
           </div>
         </div>
 
         <div class="grid__item">
           <div class="infrastructure__text">
             <p>Жилой комплекс расположен в современном районе города с инфраструктурой и развитой транспортной сетью. У жителей есть возможность быстро добраться на пляж — дорога к морю займет всего 15 минут. Также предусмотрено все необходимое для вашего комфорта.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list  infrastructure__map">
+        <div class="grid__item">
+          <div class="infrastructure-map">
+            <div class="infrastructure-map__tabs">
+              <div class="tabs  tabs--column">
+                <ul class="tabs__list">
+                  <li>
+                    <label class="js-view-infrastructure-object" data-target="#infrastructure-child">
+                      <input type="radio" name="infrastructure-object" value="infrastructure-child" checked>
+                      <span class="tabs__frame">Детские сады</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="js-view-infrastructure-object" data-target="#infrastructure-health">
+                      <input type="radio" name="infrastructure-object" value="infrastructure-health">
+                      <span class="tabs__frame">Поликлиники</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="js-view-infrastructure-object" data-target="#infrastructure-shop">
+                      <input type="radio" name="infrastructure-object" value="infrastructure-shop">
+                      <span class="tabs__frame">Гиппермаркеты</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="js-view-infrastructure-object" data-target="#infrastructure-cafe">
+                      <input type="radio" name="infrastructure-object" value="infrastructure-cafe">
+                      <span class="tabs__frame">Рестораны, кафе</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="infrastructure-map__accent">
+              <div class="infrastructure-map__item" id="infrastructure-cafe">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af632fecc55d4ad349f769d329a1b3b23ab8cfacc32b3908e3671d2f43b29714f&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+
+              <div class="infrastructure-map__item" id="infrastructure-shop">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A557dbb3b82999488ad9e0cfec7d80e66542f69fa684456d0f4e010b6ef849fed&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+
+              <div class="infrastructure-map__item" id="infrastructure-health">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefc9a49ee03e2f679fd05c1325f0ac4e4e5bc2266b8ff1c89fa7ba46fd0635d5&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+
+              <div class="infrastructure-map__item" id="infrastructure-child">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afeeca1785fe8ed0a040e8a2927b433414dea88a083fbaec0bcff9d1f14d06551&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+              </div>
+            </div>
           </div>
         </div>
       </div>

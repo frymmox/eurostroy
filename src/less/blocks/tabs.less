@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  .tabs--column & {
+    flex-direction: column;
+  }
+
   label {
     display: flex;
   }
@@ -18,6 +22,20 @@
         border-radius: 0 5px 5px 0;
       }
     }
+
+    .tabs--column & {
+      &:first-child {
+        .tabs__frame {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+
+      &:last-child {
+        .tabs__frame {
+          border-radius: 0 0 5px 5px;
+        }
+      }
+    }
   }
 
   input {
@@ -28,10 +46,15 @@
     color: #fff;
     background-color: #0566aa;
   }
+}
 
-  .tabs__frame {
-    padding: 16px 20px;
-    background-color: #eeeeee;
-    cursor: pointer;
+.tabs__frame {
+  padding: 16px 20px;
+  background-color: #eeeeee;
+  cursor: pointer;
+
+  .tabs--column & {
+    width: 100%;
+    padding: 16px 32px;
   }
 }

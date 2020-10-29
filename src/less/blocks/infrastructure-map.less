@@ -1,0 +1,29 @@
+.infrastructure-map {
+  position: relative;
+}
+
+.infrastructure-map__accent {
+  height: 500px;
+  position: relative;
+}
+
+.infrastructure-map__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.infrastructure-map__tabs {
+  @media (max-width: @breakpoint-md - 1px) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: @breakpoint-md) {
+    position: absolute;
+    top: 48px;
+    right: 32px;
+    z-index: 100;
+  }
+}
