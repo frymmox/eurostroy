@@ -186,6 +186,7 @@ if (document.querySelector('.js-modal-tour')) {
   })
 }
 
+// Modal panorama
 if (document.querySelector('.js-modal-panorama')) {
   const modalOpenPanorama = document.querySelector('.js-modal-panorama-open')
   const modalClosePanorama = document.querySelector('.js-modal-panorama-close')
@@ -198,6 +199,23 @@ if (document.querySelector('.js-modal-panorama')) {
 
   modalClosePanorama.addEventListener('click', () => {
     modalPanorama.classList.remove('modal--active')
+    scrollLock.enablePageScroll()
+  })
+}
+
+// Modal map
+if (document.querySelector('.js-modal-map')) {
+  const modalOpenMap = document.querySelector('.js-modal-map-open')
+  const modalCloseMap = document.querySelector('.js-modal-map-close')
+  const modalMap = document.querySelector('.js-modal-map')
+
+  modalOpenMap.addEventListener('click', () => {
+    modalMap.classList.add('modal--active')
+    scrollLock.disablePageScroll()
+  })
+
+  modalCloseMap.addEventListener('click', () => {
+    modalMap.classList.remove('modal--active')
     scrollLock.enablePageScroll()
   })
 }

@@ -185,7 +185,7 @@
         </div>
 
         <div class="grid__item  complex-about__button">
-          <a href="#map" type="button" class="btn  btn--map">Показать на карте</a>
+          <button type="button" class="btn  btn--map  js-modal-map-open">Показать на карте</button>
         </div>
       </div>
 
@@ -3648,6 +3648,26 @@
             </div>
           </div>
         </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="modal  js-modal-map  modal--full  modal--map">
+  <div class="modal__overlay"></div>
+
+  <div class="modal__window">
+    <div class="modal__close">
+      <button class="js-modal-map-close" aria-label="Закрыть" type="button">
+        <svg width="32" height="32">
+          <use href="img/sprite.svg#cross-grey"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal__content">
+      <section class="scene  scene--full" style="height: 100%; padding-bottom: 0;">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f4e1d4797f826e1d60d07a90aedd13af5b54880fe2595b39df87a27e784c152&amp;width=100%25&amp;height=100%25&amp;lang=ru_UA&amp;scroll=false"></script>
       </section>
     </div>
   </div>

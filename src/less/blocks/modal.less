@@ -32,6 +32,12 @@
     }
   }
 
+  &--map {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
   &--show {
     display: flex;
   }
@@ -66,6 +72,11 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .modal--map & {
+    max-width: none;
+    height: 100%;
+  }
 }
 
 .modal__close {
@@ -86,6 +97,16 @@
 
     @media (max-width: @breakpoint-md - 1px) {
       top: 24px;
+      right: 24px;
+    }
+  }
+
+  .modal--map & {
+    top: 0;
+    right: 32px;
+
+    @media (max-width: @breakpoint-md - 1px) {
+      top: 8px;
       right: 24px;
     }
   }
@@ -124,6 +145,10 @@
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     transition-property: opacity, transform;
+  }
+
+  .modal--map & {
+    height: 100%;
   }
 
   .modal--active & {
