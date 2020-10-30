@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Еврострой</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="libs.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32"> -->
+  </head>
+  <body>
+    <div class="page">
+
+
+<header class="header  @@variant">
+  <div class="header__wrap">
+    <div class="header__list">
+      <div class="header__fold">
+        <ul class="header__menu  header__menu--fold">
+          <li class="header__logo">
+            <a href="index.html">
+              <img src="img/logo.png" width="132" height="65" alt="">
+            </a>
+          </li>
+
+          <li class="header__logo  header__logo--complex">
+            <img src="img/logo-complex.png" width="193" height="57" alt="">
+          </li>
+
+          <li class="header__phone">
+            <div class="phone">
+              <div class="phone__image">
+                <a href="tel:+78002502031">
+                  <img src="img/phone.png" width="27" height="27" alt="">
+                </a>
+              </div>
+
+              <div class="phone__text">
+                <p class="phone__desc">*Бесплатный звонок по РФ</p>
+                <p class="phone__number"><a href="tel:+78002502031">8 800 250 20 31</a></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="header__callback">
+            <button type="button" class="btn  btn--border">Обратный звонок</button>
+          </li>
+
+          <li class="header__toggle">
+            <button class="header__open" type="button">
+              <svg width="32" height="32">
+                <use href="img/sprite.svg#menu"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__collapse">
+        <button class="header__close" type="button">
+          <svg width="32" height="32">
+            <use href="img/sprite.svg#cross"></use>
+          </svg>
+        </button>
+
+        <nav class="header__nav">
+          <ul class="header__menu  header__menu--collapse">
+            <li class="header__link"><a href="#">О компании</a></li>
+
+            <li class="header__link">
+              <span class="js-collapse-toggle" data-target="#menu-object">
+                Объекты в продаже
+
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-object" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link">
+              <span href="#" class="js-collapse-toggle" data-target="#menu-project">
+                Строящиеся проекты
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-project" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link">
+              <span href="#" class="js-collapse-toggle" data-target="#menu-office">
+                Офисы продаж
+                <span class="icon">
+                  <svg width="18" height="18">
+                    <use href="img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </span>
+              </span>
+
+              <div id="menu-office" class="header__dropdown  menu-dropdown">
+                <ul class="menu-dropdown__list">
+                  <li class="menu-dropdown__item"><a href="#">ЖК «СОЧИ парк»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «Черноморский»</a></li>
+                  <li class="menu-dropdown__item"><a href="#">ЖК «ЧЕРНОЕ МОРЕ»</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="header__link"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+
+<div class="breadcrumbs">
+	<div class="breadcrumbs__wrap">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item"><a href="#">ЖК «Черное море»</a></li>
+      <li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item  breadcrumbs__item--disabled"><a href="#">Объекты в продаже</a></li>
+		</ul>
+	</div>
+</div>
+
+<section class="scene">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list  grid__list--two-xl" style="align-items: center;">
+        <div class="grid__item">
+          <h2>Объекты в продаже</h2>
+        </div>
+
+        <div class="grid__item">
+          <div class="city-selection">
+            <ul class="city-selection__list">
+              <li>
+                <label>
+                  <input type="radio" name="citys" value="gelendjik">
+                  <span class="city-selection__frame">Геленджик</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="citys" value="sochi">
+                  <span class="city-selection__frame">Сочи</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="citys" value="anapa">
+                  <span class="city-selection__frame">Анапа</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="citys" value="novorossiysk">
+                  <span class="city-selection__frame">Новороссийск</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="citys" value="all" checked>
+                  <span class="city-selection__frame">Все города</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__list  grid__list--two">
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img class="show-tooltip" data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img class="show-tooltip" data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="project-card">
+            <ul class="project-card__icons">
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="blue"  data-tippy-show="true" aria-describedby="tippy-1" src="img/discount.png" width="17" height="16" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="red" src="img/diagram.png" width="21" height="21" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="orange" src="img/speed.png" width="19" height="19" alt="">
+              </li>
+              <li>
+                <img data-tippy-content="Ипотека от 4,2%" data-tippy-theme="green" src="img/correct.png" width="20" height="17" alt="">
+              </li>
+            </ul>
+
+            <div class="project-card__accent">
+              <div class="swiper-container  project-card__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+
+                    <div class="swiper-slide  project-card__slide"><a href="#"><img src="img/house@2x.jpg" alt=""></a></div>
+                </div>
+
+                <div class="swiper-pagination  project-card__pagination"></div>
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3><a href="#">ЖК «Черноморский»</a></h3>
+                <p>г. Геленджик, ул. Крымская 19А</p>
+              </div>
+
+              <div class="project-card__table">
+                <div class="project-card__row">
+                  <span>Стоимость:</span>
+                  <span>от 3 500 233 ₽</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Площадь:</span>
+                  <span>от 30,2 м2</span>
+                </div>
+
+                <div class="project-card__row">
+                  <span>Кол-во этажей:</span>
+                  <span>7-9</span>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                Старт продаж корпус 13,14
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  feedback">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item  feedback__item">
+          <div class="feedback__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+
+          <div class="feedback__text">
+            <p>Оставьте свой номер, мы свяжемся с вами и подробно на них ответим</p>
+          </div>
+
+          <div class="feedback__action">
+            <form class="form  feedback__form">
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input" placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input  input-phone" placeholder="Введите телефон" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  feedback__button" type="submit">Оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="feedback__desc">
+            <p>Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__wrap">
+    <div class="footer__list  footer__list--top">
+      <div class="footer__item">
+        <div class="footer__logo">
+          <a href="index.html"><img src="img/logo.png" width="176" height="86" alt=""></a>
+        </div>
+
+        <div class="footer__call">
+          <a href="tel:+78002502031">8 800 250 20 31</a>
+          <p>Обратный звонок</p>
+        </div>
+
+        <div class="footer__social">
+          <div class="social">
+            <div class="social__item">
+              <a href="#"><img src="img/instagram.png" width="28" height="29" alt=""></a>
+            </div>
+
+            <div class="social__item">
+              <a href="#"><img src="img/vk.png" width="28" height="29" alt=""></a>
+            </div>
+
+            <div class="social__item">
+              <a href="#"><img src="img/youtube.png" width="28" height="29" alt=""></a>
+            </div>
+
+            <div class="social__item">
+              <a href="#"><img src="img/facebook.png" width="28" height="29" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">История</a>
+          </li>
+          <li>
+            <a href="#">Реквизиты</a>
+          </li>
+          <li>
+            <a href="#">Вакансии</a>
+          </li>
+          <li>
+            <a href="#">Офисы продаж</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Проекты</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Черноморский 2»</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Черное море»</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Аврора»</a>
+          </li>
+          <li>
+            <a href="#">ТЦ «Черноморский»</a>
+          </li>
+          <li>
+            <a href="#">ЖК «Жемчужный»</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Способы покупки</a>
+          </li>
+          <li>
+            <a href="#">Ипотека</a>
+          </li>
+          <li>
+            <a href="#">Мат. капитал</a>
+          </li>
+          <li>
+            <a href="#">Военная ипотека</a>
+          </li>
+          <li>
+            <a href="#">Рассрочка</a>
+          </li>
+          <li>
+            <a href="#">Семейная ипотека</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Строим в городах</a>
+          </li>
+          <li>
+            <a href="#">г. Геленджик</a>
+          </li>
+          <li>
+            <a href="#">г. Анапа</a>
+          </li>
+          <li>
+            <a href="#">г. Новороссийск</a>
+          </li>
+          <li>
+            <a href="#">г. Сочи</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__list  footer__list--bottom">
+      <div class="footer__item  footer__desc">
+        <p>Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ.</p>
+      </div>
+
+      <div class="footer__item">
+        <p>Все права защищены  ИСК«Еврострой»</p>
+      </div>
+
+      <div class="footer__item">
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="libs.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
