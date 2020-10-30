@@ -131,6 +131,13 @@ const swiperPaymentPromo = new Swiper('.payment-promo__slider', {
   autoHeight: true,
 })
 
+const swiperSocialResponsibility = new Swiper('.social-responsibility__slider', {
+  navigation: {
+    nextEl: '.social-responsibility__next',
+    prevEl: '.social-responsibility__prev',
+  },
+})
+
 const swiperVirtualTour = new Swiper('.slider-3d__slider', {
   navigation: {
     nextEl: '.slider-3d__next',

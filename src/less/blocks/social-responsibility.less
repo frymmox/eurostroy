@@ -1,0 +1,123 @@
+.social-responsibility__slider {
+  border-radius: @border-radius;
+}
+.social-responsibility__slide {
+  padding-bottom: 120%;
+  position: relative;
+
+  @media (min-width: @breakpoint-md) {
+    padding-bottom: 80%;
+  }
+
+  @media (min-width: @breakpoint-lg) {
+    padding-bottom: 40%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.social-responsibility__content {
+  position: absolute;
+  top: 50%;
+  left: 64px;
+  transform: translateY(-50%);
+
+  @media (max-width: @breakpoint-md - 1px) {
+    left: 8px;
+  }
+}
+
+.social-responsibility__card {
+  padding: 32px;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: @border-radius;
+  position: relative;
+
+  @media (max-width: @breakpoint-md - 1px) {
+    max-width: 240px;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+  }
+}
+
+.social-responsibility__text {
+  @media (max-width: @breakpoint-md - 1px) {
+    display: none;
+  }
+}
+
+.social-responsibility__icon {
+  background-color: #e2001a;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  transform: translateY(-50%);
+
+  @media (max-width: @breakpoint-md - 1px) {
+    top: -22px;
+    left: 8px;
+    transform: translateY(0);
+  }
+}
+
+.social-responsibility__prev,
+.social-responsibility__next {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: auto;
+  bottom: 16px;
+  color: #fff;
+
+  @media (min-width: @breakpoint-md) {
+    bottom: 32px;
+  }
+
+  &::after {
+    font-size: 24px;
+  }
+}
+
+.social-responsibility__prev {
+  left: 16px;
+
+  @media (min-width: @breakpoint-md) {
+    left: 32px;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    left: 64px;
+  }
+}
+
+.social-responsibility__next {
+  right: auto;
+  left: 72px;
+
+  @media (min-width: @breakpoint-md) {
+    left: 88px;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    left: 120px;
+  }
+}
