@@ -1,0 +1,137 @@
+@@include('inc/doc-start.html', {
+	"title": "Новости"
+})
+
+@@include('inc/page-header.html', {
+  variant: 'header--complex'
+})
+
+<div class="breadcrumbs">
+	<div class="breadcrumbs__wrap">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item"><a href="#">ЖК «Черное море»</a></li>
+      <li class="breadcrumbs__divider">></li>
+      <li class="breadcrumbs__item  breadcrumbs__item--disabled"><a href="#">Новости</a></li>
+		</ul>
+	</div>
+</div>
+
+<section class="scene">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item">
+          <h2>Все новости ЖК «Черное море»</h2>
+        </div>
+      </div>
+
+      <div class="grid__list  grid__list--two">
+        <div class="grid__item">
+          <div class="news-post">
+            <div class="news-post__accent">
+              <img src="img/news@2x.jpg" alt="">
+            </div>
+
+            <div class="news-post__content">
+              <div class="news-post__title">
+                <h3><a href="#">Дарим парковку при покупке 3-х ком. квартиры</a></h3>
+              </div>
+
+              <div class="news-post__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+              </div>
+
+              <div class="news-post__date">
+                28.08.2020
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="news-post">
+            <div class="news-post__accent">
+              <img src="img/news@2x.jpg" alt="">
+            </div>
+
+            <div class="news-post__content">
+              <div class="news-post__title">
+                <h3><a href="#">Дарим парковку при покупке 3-х ком. квартиры</a></h3>
+              </div>
+
+              <div class="news-post__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+              </div>
+
+              <div class="news-post__date">
+                28.08.2020
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scene  feedback">
+  <div class="grid">
+    <div class="grid__wrap">
+      <div class="grid__list">
+        <div class="grid__item  feedback__item">
+          <div class="feedback__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+
+          <div class="feedback__text">
+            <p>Оставьте свой номер, мы свяжемся с вами и подробно на них ответим</p>
+          </div>
+
+          <div class="feedback__action">
+            <form class="form  feedback__form">
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input" placeholder="Введите имя" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <input class="form__input  input-phone" placeholder="Введите телефон" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__field">
+                  <div class="form__row">
+                    <div class="form__control">
+                      <button class="btn  feedback__button" type="submit">Оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="feedback__desc">
+            <p>Нажимая на кнопку «Оставить заявку», вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')
