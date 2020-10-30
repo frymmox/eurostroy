@@ -104,6 +104,13 @@ const swiperComplexAbout = new Swiper('.complex-about-media__slider', {
   },
 })
 
+const swiperImplementedProjectAbout = new Swiper('.implemented-project-about__slider', {
+  navigation: {
+    nextEl: '.implemented-project-about__next',
+    prevEl: '.implemented-project-about__prev',
+  },
+})
+
 const swiperTabs = new Swiper('.tabs-buttons', {
   slidesPerView: 'auto',
   freeMode: true,
