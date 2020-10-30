@@ -16,14 +16,18 @@
 }
 
 .infrastructure-map__tabs {
+  max-height: 400px;
+  overflow-y: auto;
+
   @media (max-width: @breakpoint-md - 1px) {
     margin-bottom: 16px;
   }
 
   @media (min-width: @breakpoint-md) {
     position: absolute;
-    top: 48px;
+    top: 50%;
     right: 32px;
+    transform: translateY(-50%);
     z-index: 100;
   }
 }
